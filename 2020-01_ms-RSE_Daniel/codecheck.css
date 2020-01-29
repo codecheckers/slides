@@ -1,0 +1,51 @@
+/* from https://github.com/codecheckers/website/blob/master/assets/codecheck.css  */
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+ul li {
+  font-size: 1.2em;
+}
+
+ul li > ul li {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #008033;
+}
+
+.principle {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+summary {
+  color: #6c757d;
+}
+
+/* overwriting https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
+a, a > code {
+  color: #008033;
+  text-decoration: none;
+}
+
+.remark-code-line-highlighted     { background-color: #ffff88; }
+
+.inverse {
+  background-color: #008033;
+  color: #ffffff;
+  text-shadow: 0 0 3px #999;
+}
+.inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6 {
+  color: #ffffff;
+}
+.inverse a {
+  color: #55555F;
+  text-decoration: none;
+}
+
+/* https://github.com/yihui/xaringan/wiki/Title-slide */
+.title-slide .remark-slide-number {
+  display: none;
+}

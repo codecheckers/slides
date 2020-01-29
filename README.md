@@ -1,4 +1,6 @@
-# slides
+# Slide Decks for CODE CHECK
+
+- `2020-01_ms-RSE-Daniel`: short slide deck (~ 10 minutes) given by Daniel at a local RSE community meetup
 
 ## License
 
