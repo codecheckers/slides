@@ -322,3 +322,15 @@ Next steps and current status:
 - writing a paper about principles and variations
 
 **THANK YOU**
+
+```{r create_pdf, eval=FALSE, include=FALSE}
+current_file <- basename(rstudioapi::getSourceEditorContext()$path)
+system(paste0("cat ", current_file, " | grep -v '^--$' > print.Rmd"))
+rmarkdown::render("print.Rmd", "xaringan::moon_reader")
+xaringan::decktape(file = "print.html", output = "slides.pdf", docker = TRUE)
+file.copy(from = "slides.pdf",
+          to = file.path("../docs", paste0(basename(getwd()), ".pdf")),
+          overwrite = TRUE)
+file.remove("slides.pdf", "print.html", "print.Rmd")
+```
+

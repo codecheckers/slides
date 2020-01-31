@@ -1,7 +1,7 @@
 # Slide Decks for CODE CHECK
 
 - MUNIN conference 2020 (Stephen): [slides](https://septentrio.uit.no/index.php/SCS/article/view/4910/4900), [poster](https://septentrio.uit.no/index.php/SCS/article/view/4910/4893), [video](https://mediasite.uit.no/Mediasite/Play/8027873496dc465ebc4b9b3ab0338ad01d?playFrom=1772000)
-- `2020-01_ms-RSE-Daniel`: short slide deck (~ 10 minutes) given by Daniel at a local RSE community meetup
+- `2020-01_ms-RSE-Daniel`: short slide deck (~ 10 minutes) given by Daniel at a local RSE community meetup, download as [PDF](https://codecheckers.github.io/slides/2020-01_ms-RSE_Daniel.pdf)
 
 ## License
 
