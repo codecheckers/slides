@@ -1,5 +1,5 @@
 ---
-title: "CODE CHECK project"
+title: "CODECHECK project"
 subtitle: "<br/>reviewing code in research publications"
 author: "Daniel Nüst"
 institute: "https://codecheck.org.uk/"
@@ -29,7 +29,7 @@ _A process for independent reproduction of computations underlying research_
 ---
 class: inverse, center, middle
 
-# The four CODE CHECK principles
+# The four CODECHECK principles
 
 ???
 
@@ -64,7 +64,7 @@ four principles
 The priority in all documentation and metadata is that a human codechecker can understand them.
 The codechecker is _not_ making a scientific judgement.
 It is also close to impossible to make a codecheck blind.
-Therefore a CODE CHECK must not be anonymised must provide a two-way means of communication between author and codechecker.
+Therefore a CODECHECK must not be anonymised must provide a two-way means of communication between author and codechecker.
 Codecheckers are supported by formal metadata, automation, and reproducibility infrastructure, yet the check shall not rely on them.
 Codechecks may be conducted by existing stakeholders in the submission process (e.g., a reviewer), but may also be handled with new roles and by people underrepresented in classic peer-review, such as early career resarchers (ECRs) or resarch software engineers (RSEs).
 
@@ -97,7 +97,7 @@ Codechecks may be conducted by existing stakeholders in the submission process (
 A codechecker is _not_ required to fix workflows, but to document the given state of documentation and executability.
 Of course, given a level of interested and skills, a codechecker may go beyond simple small fixes and actively collaborate with an authow to create a better research output.
 The codechecker's report provides helpful input to the scientific review, e.g., to help the reviewer's understanding.
-But a CODE CHECK does not evaluate scientific merit!
+But a CODECHECK does not evaluate scientific merit!
 A failed check does not imply the rejection of a submission.
 _Codechecker take the pictures at a crime scene, they do not hunt the murderer._
 
@@ -130,10 +130,10 @@ _Codechecker take the pictures at a crime scene, they do not hunt the murderer._
 ???
 
 Software and its review are crucial for research in the age of digitisation, so the contribution to the scientific body of knowledge in form of a check gets the credit it deserves.
-If a CODE CHECK was conducted as part of a review process, (a) the publisher ensures a proper creditation to the level given to scientific reviewers, e.g. by listen the codechecker on an article or journal page (with number of reviews) or by depositing metadata to public databases (e.g., CrossRef, Publons), and (b) a sentence in the methods section is added mentioning the occured CODE CHECK and the reviewer name.
+If a CODECHECK was conducted as part of a review process, (a) the publisher ensures a proper creditation to the level given to scientific reviewers, e.g. by listen the codechecker on an article or journal page (with number of reviews) or by depositing metadata to public databases (e.g., CrossRef, Publons), and (b) a sentence in the methods section is added mentioning the occured CODECHECK and the reviewer name.
 The deposited metadata includes a codechecker's ORCID, time, journal, and (if published) the article DOI.
    
-This principle intentionally does not regulate if/how the output of the CODE CHECK is deposited and who does it.
+This principle intentionally does not regulate if/how the output of the CODECHECK is deposited and who does it.
 Ideally though the contribution made by the codechecker is openly published in form of a DOI-able artifact and the sentence in the methods sections links to it as a simple hyperlink/URL.
 
 ---
@@ -169,11 +169,11 @@ Being executed once means that a detailed investigation may occur at a later tim
 Being auditable includes that authors provide data and code for relevant analsis steps and visualisations to the codecheckers, but does not imply that all of the code associated with an article must be checked. 
 
 ---
-### Implementing the CODE CHECK process
+### Implementing the CODECHECK process
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vQ02PwUmSs2mCpGh1b9rqI9b6yk8uIVX2RyCj3ac9W2U7quzQHFVJpQtrOxg1eqLrLMD6174PjDfCEq/pub?w=767&amp;h=410">
 
-_Sketch of steps to implement a CODE CHECK._
+_Sketch of steps to implement a CODECHECK._
 
 ???
 
@@ -221,18 +221,18 @@ Four dimensions:
 ### Post review with extra role
 
 1. A manuscript with computations passes scientific peer-review and is assigned a codechecker with matching expertise (first priority: code, second priority: domain).
-1. The codechecker must understand the instructions and executes the workflow using the CODE CHECK infrastructure.
-   They contact the manuscript author if needed and collaborate based on the CODE CHECK infrastructure.
-1. A CODE CHECK evaluates if the code and data produce a core output (figure, dataset) - it is _not_ a result check or judgement of scientific merit.
-1. The codechecker makes the final call on the result within a week, publishes the checked code and data together with the environment in a public repository (with DOI), and puts their name on it. A <img src="/img/codeworks-badge.svg" alt="CODE CHECK badge" height="16" style="margin-top: -4px;" /> badge on the published article points to the repository with the checked files.
+1. The codechecker must understand the instructions and executes the workflow using the CODECHECK infrastructure.
+   They contact the manuscript author if needed and collaborate based on the CODECHECK infrastructure.
+1. A CODECHECK evaluates if the code and data produce a core output (figure, dataset) - it is _not_ a result check or judgement of scientific merit.
+1. The codechecker makes the final call on the result within a week, publishes the checked code and data together with the environment in a public repository (with DOI), and puts their name on it. A <img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /> badge on the published article points to the repository with the checked files.
 
 ### Pre-review with extra role on staff
 
 1. An editorial staff member/ECR with technical expertise checks if something is "mechanically wrong" before sending out a submission to review.
    This is worth the time together with other technical checks! The codechecker can reach out to the author to fix problems.
    It is also a sanity check for the author and a measure of seriousness for the journal.
-1. If a code check is successful, start the regular review.
-1. After acceptance, add <img src="/img/codeworks-badge.svg" alt="CODE CHECK badge" height="16" style="margin-top: -4px;" /> badge to the published article.
+1. If a CODECHECK is successful, start the regular review.
+1. After acceptance, add <img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /> badge to the published article.
 
 ### Parallel reproducibility reviewer
 
@@ -240,28 +240,28 @@ Four dimensions:
 1. It is assigned a scientific reviewer with the suitable domain expertise, and a codechecker with matching technical expertise.
    The scientific review is conducted open/single-blind/double-blind, while the codechecker knows the author and can reach out directly through the best channel, e.g. email, GitHub/GitLab issues, or discussion forums.
 1. Both reviewer and codechecker follow the same deadline.
-1. Both the scientific review and the CODE CHECK result are submitted to the handling editor or programme committee member, who makes the decision on how to proceed.
-1. Independent of the submissions acceptance, the CODE CHECK findings are sent to the submitting author.
+1. Both the scientific review and the CODECHECK result are submitted to the handling editor or programme committee member, who makes the decision on how to proceed.
+1. Independent of the submissions acceptance, the CODECHECK findings are sent to the submitting author.
 
 ### Regular reviewer
 
 The review process is conducted as usual, but the editor does not only match the domain expertise but also technical skills.
-The reviewer conducts the CODE CHECK and submits the resulting certificate as part of his report.
+The reviewer conducts the CODECHECK and submits the resulting certificate as part of his report.
 This variant requires an open peer review and a broad pool of reviewers.
 
 ### Independent community pre-review
 
-An author may also reach out to a colleague or find a [Code Copilot](https://twitter.com/Code_Copilot) on Twitter, who can give feedback but also create a CODE CHECK report according the a journal's/conference's implementation of the principles.
+An author may also reach out to a colleague or find a [Code Copilot](https://twitter.com/Code_Copilot) on Twitter, who can give feedback but also create a CODECHECK report according the a journal's/conference's implementation of the principles.
 This report certainly increases trust in a workflow and may help authors to include code and data in their submission.
 Such an independent report may even be taken up during review and take the place of a report usually created by a different process described on this page.
 
 ### More?
 
-You have ideas about how a CODE CHECK would work for your journal or conference? _Let us know !_
+You have ideas about how a CODECHECK would work for your journal or conference? _Let us know !_
 
 ???
 
-In our discussions with editors and publishers, we found that the _point in time_ during the review process when a code check happens, the person who takes the role of codechecker, and the openness of the codechek, can vary.
+In our discussions with editors and publishers, we found that the _point in time_ during the review process when a CODECHECK happens, the person who takes the role of codechecker, and the openness of the codechek, can vary.
 For example, the check may happen before peer review or after, the codechecker can be staff, a regular reviewer, or a member of a special reproducibility committee, the check may be open or blind, either matching or differing from the scientific review, and the results may be published or confidential.
 
 ---
@@ -298,7 +298,7 @@ Watch Stephen's talk at [The 14th Munin Conference on Scholarly Publishing 2019]
 ---
 class: inverse
 
-## The CODE CHECK principles
+## The CODECHECK principles
 
 .pull-left[
 #### 1. Codecheckers are humans and communication is key.
