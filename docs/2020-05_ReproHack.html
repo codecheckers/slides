@@ -1,26 +1,30 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Research compendia enable code review during peer review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel Nüst @ Remote ReproHack, May 14, 2020" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="codecheck.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Research compendia enable code review during peer review
+## <br />with CODECHECK and Opening Reproducible Research (o2r)<br /><a href="https://codecheck.org.uk/" class="uri">https://codecheck.org.uk/</a> | <a href="https://o2r.info" class="uri">https://o2r.info</a>
+### Daniel Nüst @ <a href='https://n8cir.org.uk/events/remote-reprohack/'>Remote ReproHack</a>, May 14, 2020
+### Institute for Geoinformatics, University of Münster | <a href="http://nüst.de" class="uri">http://nüst.de</a>
+### 2020-05-14<br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />
+
 ---
-title: "Research compendia enable code review during peer review"
-subtitle: "<br />with CODECHECK and Opening Reproducible Research (o2r)<br />https://codecheck.org.uk/ | https://o2r.info"
-author: "Daniel Nüst @ <a href='https://n8cir.org.uk/events/remote-reprohack/'>Remote ReproHack</a>, May 14, 2020"
-institute: "Institute for Geoinformatics, University of Münster | http://nüst.de"
-date: "`r Sys.Date()`<br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      beforeInit: ["macros.js"]
-      ratio: "16:9"
-    css: ["default", "codecheck.css"]
----
+
 
 class: inverse
 
-# &nbsp;
+# &amp;nbsp;
 
-> ### _The problem is that most modern science is so complicated, and most journal articles so brief, it’s impossible for the article to include details of many important methods and decisions made by the researcher as he analyzed his data on his computer._
+&gt; ### _The problem is that most modern science is so complicated, and most journal articles so brief, it’s impossible for the article to include details of many important methods and decisions made by the researcher as he analyzed his data on his computer._
 
 Ben Marwick: [How computers broke science – and what we can do to fix it](https://theconversation.com/how-computers-broke-science-and-what-we-can-do-to-fix-it-49938)
 
@@ -32,12 +36,12 @@ _"Claerbout's claim"_ in Donoho (2010), [An invitation to reproducible computati
 
 --
 
-Claerbout & Karrenbach (1992), [Electronic documents give reproducible research a new meaning](https://doi.org/10.1190/1.1822162)
+Claerbout &amp; Karrenbach (1992), [Electronic documents give reproducible research a new meaning](https://doi.org/10.1190/1.1822162)
 
 
 ???
 
-> [..] an article about a computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result." (Donoho, 2010)
+&gt; [..] an article about a computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result." (Donoho, 2010)
 
 **All stakeholders in science lack crucial skills, tools, and resources to enable publishing of the actual scholarship.**
 
@@ -55,7 +59,7 @@ Now we know there is a problem, what does that mean for you?
 
 .pull-left[
 **FROM**
-<font style="font-size: 8em; font-weight: bolder;">T</font>
+&lt;font style="font-size: 8em; font-weight: bolder;"&gt;T&lt;/font&gt;
 - broad knowledge: cross-discipline, collaboration
 - deep knowledge: domain speciality (expertise and skills)
 ] 
@@ -64,7 +68,7 @@ Now we know there is a problem, what does that mean for you?
 
 .pull-right[
 **TO**
-<font style="font-size: 10em; font-weight: bolder; line-height: 0.8em">π</font>
+&lt;font style="font-size: 10em; font-weight: bolder; line-height: 0.8em"&gt;π&lt;/font&gt;
 - broad knowledge: cross-discipline, collaboration
 - deep knowledge
   - domain speciality (expertise and skills)
@@ -82,11 +86,11 @@ Public domain images: [Wikipedia, CDC](https://en.wikipedia.org/wiki/Biosafety_c
 
 --
 
-<div style="position: absolute; z-index: 1; left: 25%; top:25%"><img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Influenza_virus_research.jpg/1280px-Influenza_virus_research.jpg" width="150px"></div>
+&lt;div style="position: absolute; z-index: 1; left: 25%; top:25%"&gt;&lt;img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Influenza_virus_research.jpg/1280px-Influenza_virus_research.jpg" width="150px"&gt;&lt;/div&gt;
 
 --
 
-<div style="position: absolute; z-index: 1; left: 75%; top:25%"><img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Computer_case.JPG/238px-Computer_case.JPG" width="200px"></div>
+&lt;div style="position: absolute; z-index: 1; left: 75%; top:25%"&gt;&lt;img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Computer_case.JPG/238px-Computer_case.JPG" width="200px"&gt;&lt;/div&gt;
 
 ???
 
@@ -99,7 +103,7 @@ Public domain images: [Wikipedia, CDC](https://en.wikipedia.org/wiki/Biosafety_c
 ------
 
 Wikipedia:
-> The concept of T-shaped skills, or T-shaped persons is a metaphor used in job recruitment to describe the abilities of persons in the workforce. The vertical bar on the letter T represents the depth of related skills and expertise in a single field, whereas the horizontal bar is the ability to collaborate across disciplines with experts in other areas and to apply knowledge in areas of expertise other than one's own. 
+&gt; The concept of T-shaped skills, or T-shaped persons is a metaphor used in job recruitment to describe the abilities of persons in the workforce. The vertical bar on the letter T represents the depth of related skills and expertise in a single field, whereas the horizontal bar is the ability to collaborate across disciplines with experts in other areas and to apply knowledge in areas of expertise other than one's own. 
 
 - From T-shaped researcher to PI-shaped resarchers
 - All science becomes data science
@@ -128,7 +132,7 @@ class: inverse, center
 
 ## Research compendia
 
-> ### ...We introduce the concept of a _compendium as_ both _a container for_ the different elements that make up the document and its computations (i.e. _text, code, data, ..._), and as a means for _distributing_, _managing_ and _updating_ the collection.
+&gt; ### ...We introduce the concept of a _compendium as_ both _a container for_ the different elements that make up the document and its computations (i.e. _text, code, data, ..._), and as a means for _distributing_, _managing_ and _updating_ the collection.
 
 Gentleman, Robert, and Duncan Temple Lang. 2007. "Statistical Analyses and Reproducible Research". Journal of Computational and Graphical Statistics 16 (1): 1–23. https://doi.org/10.1198/106186007X178663
 
@@ -193,11 +197,11 @@ Source: Ram (2019), [How To Make Your Data Analysis Notebooks More Reproducible]
 
 **key principles**
 
-  - conventions > "reader perspective" (How to Read...)
+  - conventions &gt; "reader perspective" (How to Read...)
 
 **take home messages**
 
-  - R Markdown is really powerful, multi-language > have one control script
+  - R Markdown is really powerful, multi-language &gt; have one control script
   - don't obsess about "once click reproduce", but from time to time that should work!
 
 ---
@@ -245,10 +249,10 @@ class: inverse, center, middle
 - use [good file names](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) and relative paths (or Jenny Bryan will come and get you)
 - use text-based, open file formats
 - only work in containers (Rule 10)
-- apply templates & follow commmunity practices (e.g., `rrtools`)
+- apply templates &amp; follow commmunity practices (e.g., `rrtools`)
 - write and publish notebooks
 - use only scripts, no point-and-click
-- embrace openness & [be](https://doi.org/10.1186/s13059-015-0850-7) [ne](https://doi.org/10.1093/biostatistics/kxq028) [fi](https://doi.org/10.1109/MSP.2009.932122) [ts](https://doi.org/10.1007/s10816-015-9272-9)
+- embrace openness &amp; [be](https://doi.org/10.1186/s13059-015-0850-7) [ne](https://doi.org/10.1093/biostatistics/kxq028) [fi](https://doi.org/10.1109/MSP.2009.932122) [ts](https://doi.org/10.1007/s10816-015-9272-9)
 - **document for future me**
 - work/review in the spirit of [**preproducibility**](https://doi.org/10.1038/d41586-018-05256-0)
 ------
@@ -260,7 +264,7 @@ class: inverse, center, middle
 .pull-right[
 ![:scale 75%](https://media.giphy.com/media/3kHBTKpqvVLXJi494C/giphy.gif)
 
-<font style="color: grey">https://gph.is/2JF2u2T</font>
+&lt;font style="color: grey"&gt;https://gph.is/2JF2u2T&lt;/font&gt;
 ]
 
 ???
@@ -311,8 +315,8 @@ In my opinion, only carrots do not cut it, so we need sticks:
 
 - [Binder-ready](https://mybinder.org/) research compendium ![](https://mybinder.org/static/logo.svg)
 
-- Research compendium + container + bindings =<br/> [Executable Research Compendium](https://doi.org/10.1045/january2017-nuest) ([o2r.info/results/](https://o2r.info/results/))
-<div style="position: absolute; left: 75%; top:25%"><a href="https://doi.org/10.1045/january2017-nuest"><img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png"></a></div>
+- Research compendium + container + bindings =&lt;br/&gt; [Executable Research Compendium](https://doi.org/10.1045/january2017-nuest) ([o2r.info/results/](https://o2r.info/results/))
+&lt;div style="position: absolute; left: 75%; top:25%"&gt;&lt;a href="https://doi.org/10.1045/january2017-nuest"&gt;&lt;img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png"&gt;&lt;/a&gt;&lt;/div&gt;
 
 - [Ten Simple Rules for Writing Dockerfiles for Reproducible Data Science](https://doi.org/10.31219/osf.io/fsd7t)
 
@@ -324,9 +328,7 @@ class: center, middle, inverse
 ---
 class: center, middle
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+
 
 
 ![](https://codecheck.org.uk/img/codecheck_logo.svg)
@@ -364,9 +366,9 @@ class: center, inverse
 
 --
 
-### &nbsp;
+### &amp;nbsp;
 
-<img style="border: 10px solid white;" src="https://codecheck.org.uk/img/codeworks-badge.svg">
+&lt;img style="border: 10px solid white;" src="https://codecheck.org.uk/img/codeworks-badge.svg"&gt;
 
 ???
 
@@ -376,7 +378,7 @@ class: center, inverse
 
 1. A codechecker is _not_ required to fix workflows, but to document the given state of documentation and executability. Of course, given a level of interested and skills, a codechecker may go beyond simple small fixes and actively collaborate with an author to create a better research output. The codechecker's report provides helpful input to the scientific review, e.g., to help the reviewer's understanding. But a CODECHECK does not evaluate scientific merit! A failed CODECHECK does not imply the rejection of a submission.
   - _Not_ fixing, but _document_ state
-  - Interest + skills = collaboration & improvement
+  - Interest + skills = collaboration &amp; improvement
   - **Report** informs the scientific review, but not evaluate scientific merit!
   - Failed check != rejection
   - **Codechecker take the pictures at a crime scene, they do not hunt the murderer.**
@@ -400,13 +402,13 @@ class: center, inverse
   - Minimal requirement
     - **Code executed once**
     - **Scripted workflow**
-  - "Everything is there" _for the checked data & code_, and auditable
+  - "Everything is there" _for the checked data &amp; code_, and auditable
   - Not all steps must be checked
 
 ---
 ### Implementing the CODECHECK process
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQ02PwUmSs2mCpGh1b9rqI9b6yk8uIVX2RyCj3ac9W2U7quzQHFVJpQtrOxg1eqLrLMD6174PjDfCEq/pub?w=767&amp;h=410">
+&lt;img src="https://docs.google.com/drawings/d/e/2PACX-1vQ02PwUmSs2mCpGh1b9rqI9b6yk8uIVX2RyCj3ac9W2U7quzQHFVJpQtrOxg1eqLrLMD6174PjDfCEq/pub?w=767&amp;amp;h=410"&gt;
 
 _Sketch of steps and responsibilities to implement a CODECHECK._
 
@@ -419,7 +421,7 @@ Role of publisher: controls process, and realises that credit is given
 ---
 ### Process variations
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQFaeUaBVzc1g39rGRfD9TKJkpC-Je3VY0fd0kClv_EQ-2Xcqr5ZlTYC5SeNtBuLA_UvrLbf_SSQ8Qm/pub?w=770&amp;h=271">
+&lt;img src="https://docs.google.com/drawings/d/e/2PACX-1vQFaeUaBVzc1g39rGRfD9TKJkpC-Je3VY0fd0kClv_EQ-2Xcqr5ZlTYC5SeNtBuLA_UvrLbf_SSQ8Qm/pub?w=770&amp;amp;h=271"&gt;
 
 --
 
@@ -448,7 +450,7 @@ Four dimensions:
 1. The codechecker must understand the instructions and executes the workflow using the CODECHECK infrastructure.
    They contact the manuscript author if needed and collaborate based on the CODECHECK infrastructure.
 1. A CODECHECK evaluates if the code and data produce a core output (figure, dataset) - it is _not_ a result check or judgement of scientific merit.
-1. The codechecker makes the final call on the result within a week, publishes the checked code and data together with the environment in a public repository (with DOI), and puts their name on it. A <img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /> badge on the published article points to the repository with the checked files.
+1. The codechecker makes the final call on the result within a week, publishes the checked code and data together with the environment in a public repository (with DOI), and puts their name on it. A &lt;img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /&gt; badge on the published article points to the repository with the checked files.
 
 ### Pre-review with extra role on staff
 
@@ -456,7 +458,7 @@ Four dimensions:
    This is worth the time together with other technical checks! The codechecker can reach out to the author to fix problems.
    It is also a sanity check for the author and a measure of seriousness for the journal.
 1. If a CODECHECK is successful, start the regular review.
-1. After acceptance, add <img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /> badge to the published article.
+1. After acceptance, add &lt;img src="/img/codeworks-badge.svg" alt="CODECHECK badge" height="16" style="margin-top: -4px;" /&gt; badge to the published article.
 
 ### Parallel reproducibility reviewer
 
@@ -522,11 +524,11 @@ class: inverse
 .pull-left[
 #### Team
 
-- <a href="https://github.com/codecheckers/"><svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title> <path fill="currentColor" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path> </svg></span> github.com/codecheckers</span> </a>
-- <a href="https://twitter.com/StephenEglen"><svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"> <title>Twitter</title> <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path> </svg></span> StephenEglen</a>
-- <a href="https://twitter.com/nordholmen"><svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"> <title>Twitter</title> <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path> </svg></span> nordholmen</a>
-- <a href="mailto:sje30@cam.ac.uk"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Capa_1" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" xml:space="preserve" sodipodi:docname="icon-email.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata id="metadata51"><rdf:rdf><cc:work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type><dc:title></dc:title></cc:work></rdf:rdf></metadata><defs id="defs49"></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1271" inkscape:window-height="760" id="namedview47" showgrid="false" inkscape:zoom="25.632621" inkscape:cx="7.4068351" inkscape:cy="6.1984896" inkscape:window-x="2444" inkscape:window-y="671" inkscape:window-maximized="0" inkscape:current-layer="g12" units="px"></sodipodi:namedview> <g id="g14" transform="translate(0,-48)"> <g id="g12"> <g id="mail" transform="matrix(0.48484849,0,0,0.48484849,3.4538886,19.654753)"> <g id="g9" style="stroke:#828282;stroke-opacity:1" transform="translate(2.1709556,1.8281712)"> <path d="M 21.205399,62.1339 H -6.7946007 c -1.104,0 -2,0.896 -2,2 v 18 c 0,1.104 0.896,2 2,2 H 21.205399 c 1.104,0 2,-0.896 2,-2 v -18 c 0,-1.104 -0.896,-2 -2,-2 z m -1.795,2 -12.2049997,12 -12.109,-12 z m -26.2049997,18 v -16.994 l 9.589,9.589 -7.528,7.405 z m 4.985,0 6.081,-5.927 1.58,1.579 c 0.781,0.781 2.047,0.781 2.829,0 l 1.5309997,-1.531 6.081,5.879 z m 23.0149997,0 h -1.939 l -7.527,-7.405 9.466,-9.467 z" id="path7" style="fill:#828282;stroke:#828282;stroke-opacity:1" inkscape:connector-curvature="0"></path> </g> </g> </g> </g> <g id="g16" transform="translate(0,-48)"> </g> <g id="g18" transform="translate(0,-48)"> </g> <g id="g20" transform="translate(0,-48)"> </g> <g id="g22" transform="translate(0,-48)"> </g> <g id="g24" transform="translate(0,-48)"> </g> <g id="g26" transform="translate(0,-48)"> </g> <g id="g28" transform="translate(0,-48)"> </g> <g id="g30" transform="translate(0,-48)"> </g> <g id="g32" transform="translate(0,-48)"> </g> <g id="g34" transform="translate(0,-48)"> </g> <g id="g36" transform="translate(0,-48)"> </g> <g id="g38" transform="translate(0,-48)"> </g> <g id="g40" transform="translate(0,-48)"> </g> <g id="g42" transform="translate(0,-48)"> </g> <g id="g44" transform="translate(0,-48)"> </g> </svg></span> Stephen Eglen</a>, [University of Cambridge](https://www.cam.ac.uk/)
-- <a href="mailto:daniel.nuest@uni-muenster.de"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Capa_1" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" xml:space="preserve" sodipodi:docname="icon-email.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata id="metadata51"><rdf:rdf><cc:work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type><dc:title></dc:title></cc:work></rdf:rdf></metadata><defs id="defs49"></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1271" inkscape:window-height="760" id="namedview47" showgrid="false" inkscape:zoom="25.632621" inkscape:cx="7.4068351" inkscape:cy="6.1984896" inkscape:window-x="2444" inkscape:window-y="671" inkscape:window-maximized="0" inkscape:current-layer="g12" units="px"></sodipodi:namedview> <g id="g14" transform="translate(0,-48)"> <g id="g12"> <g id="mail" transform="matrix(0.48484849,0,0,0.48484849,3.4538886,19.654753)"> <g id="g9" style="stroke:#828282;stroke-opacity:1" transform="translate(2.1709556,1.8281712)"> <path d="M 21.205399,62.1339 H -6.7946007 c -1.104,0 -2,0.896 -2,2 v 18 c 0,1.104 0.896,2 2,2 H 21.205399 c 1.104,0 2,-0.896 2,-2 v -18 c 0,-1.104 -0.896,-2 -2,-2 z m -1.795,2 -12.2049997,12 -12.109,-12 z m -26.2049997,18 v -16.994 l 9.589,9.589 -7.528,7.405 z m 4.985,0 6.081,-5.927 1.58,1.579 c 0.781,0.781 2.047,0.781 2.829,0 l 1.5309997,-1.531 6.081,5.879 z m 23.0149997,0 h -1.939 l -7.527,-7.405 9.466,-9.467 z" id="path7" style="fill:#828282;stroke:#828282;stroke-opacity:1" inkscape:connector-curvature="0"></path> </g> </g> </g> </g> <g id="g16" transform="translate(0,-48)"> </g> <g id="g18" transform="translate(0,-48)"> </g> <g id="g20" transform="translate(0,-48)"> </g> <g id="g22" transform="translate(0,-48)"> </g> <g id="g24" transform="translate(0,-48)"> </g> <g id="g26" transform="translate(0,-48)"> </g> <g id="g28" transform="translate(0,-48)"> </g> <g id="g30" transform="translate(0,-48)"> </g> <g id="g32" transform="translate(0,-48)"> </g> <g id="g34" transform="translate(0,-48)"> </g> <g id="g36" transform="translate(0,-48)"> </g> <g id="g38" transform="translate(0,-48)"> </g> <g id="g40" transform="translate(0,-48)"> </g> <g id="g42" transform="translate(0,-48)"> </g> <g id="g44" transform="translate(0,-48)"> </g> </svg></span> Daniel Nüst</a>, [ifgi](https://www.uni-muenster.de/Geoinformatics/en/), [University of Münster](https://www.uni-muenster.de/)
+- &lt;a href="https://github.com/codecheckers/"&gt;&lt;svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"&gt;&lt;title&gt;GitHub&lt;/title&gt; &lt;path fill="currentColor" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"&gt;&lt;/path&gt; &lt;/svg&gt;&lt;/span&gt; github.com/codecheckers&lt;/span&gt; &lt;/a&gt;
+- &lt;a href="https://twitter.com/StephenEglen"&gt;&lt;svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"&gt; &lt;title&gt;Twitter&lt;/title&gt; &lt;path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"&gt;&lt;/path&gt; &lt;/svg&gt;&lt;/span&gt; StephenEglen&lt;/a&gt;
+- &lt;a href="https://twitter.com/nordholmen"&gt;&lt;svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"&gt; &lt;title&gt;Twitter&lt;/title&gt; &lt;path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"&gt;&lt;/path&gt; &lt;/svg&gt;&lt;/span&gt; nordholmen&lt;/a&gt;
+- &lt;a href="mailto:sje30@cam.ac.uk"&gt;&lt;svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Capa_1" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" xml:space="preserve" sodipodi:docname="icon-email.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)"&gt;&lt;metadata id="metadata51"&gt;&lt;rdf:rdf&gt;&lt;cc:work rdf:about=""&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"&gt;&lt;/dc:type&gt;&lt;dc:title&gt;&lt;/dc:title&gt;&lt;/cc:work&gt;&lt;/rdf:rdf&gt;&lt;/metadata&gt;&lt;defs id="defs49"&gt;&lt;/defs&gt;&lt;sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1271" inkscape:window-height="760" id="namedview47" showgrid="false" inkscape:zoom="25.632621" inkscape:cx="7.4068351" inkscape:cy="6.1984896" inkscape:window-x="2444" inkscape:window-y="671" inkscape:window-maximized="0" inkscape:current-layer="g12" units="px"&gt;&lt;/sodipodi:namedview&gt; &lt;g id="g14" transform="translate(0,-48)"&gt; &lt;g id="g12"&gt; &lt;g id="mail" transform="matrix(0.48484849,0,0,0.48484849,3.4538886,19.654753)"&gt; &lt;g id="g9" style="stroke:#828282;stroke-opacity:1" transform="translate(2.1709556,1.8281712)"&gt; &lt;path d="M 21.205399,62.1339 H -6.7946007 c -1.104,0 -2,0.896 -2,2 v 18 c 0,1.104 0.896,2 2,2 H 21.205399 c 1.104,0 2,-0.896 2,-2 v -18 c 0,-1.104 -0.896,-2 -2,-2 z m -1.795,2 -12.2049997,12 -12.109,-12 z m -26.2049997,18 v -16.994 l 9.589,9.589 -7.528,7.405 z m 4.985,0 6.081,-5.927 1.58,1.579 c 0.781,0.781 2.047,0.781 2.829,0 l 1.5309997,-1.531 6.081,5.879 z m 23.0149997,0 h -1.939 l -7.527,-7.405 9.466,-9.467 z" id="path7" style="fill:#828282;stroke:#828282;stroke-opacity:1" inkscape:connector-curvature="0"&gt;&lt;/path&gt; &lt;/g&gt; &lt;/g&gt; &lt;/g&gt; &lt;/g&gt; &lt;g id="g16" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g18" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g20" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g22" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g24" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g26" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g28" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g30" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g32" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g34" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g36" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g38" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g40" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g42" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g44" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;/svg&gt;&lt;/span&gt; Stephen Eglen&lt;/a&gt;, [University of Cambridge](https://www.cam.ac.uk/)
+- &lt;a href="mailto:daniel.nuest@uni-muenster.de"&gt;&lt;svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Capa_1" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" xml:space="preserve" sodipodi:docname="icon-email.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)"&gt;&lt;metadata id="metadata51"&gt;&lt;rdf:rdf&gt;&lt;cc:work rdf:about=""&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"&gt;&lt;/dc:type&gt;&lt;dc:title&gt;&lt;/dc:title&gt;&lt;/cc:work&gt;&lt;/rdf:rdf&gt;&lt;/metadata&gt;&lt;defs id="defs49"&gt;&lt;/defs&gt;&lt;sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1271" inkscape:window-height="760" id="namedview47" showgrid="false" inkscape:zoom="25.632621" inkscape:cx="7.4068351" inkscape:cy="6.1984896" inkscape:window-x="2444" inkscape:window-y="671" inkscape:window-maximized="0" inkscape:current-layer="g12" units="px"&gt;&lt;/sodipodi:namedview&gt; &lt;g id="g14" transform="translate(0,-48)"&gt; &lt;g id="g12"&gt; &lt;g id="mail" transform="matrix(0.48484849,0,0,0.48484849,3.4538886,19.654753)"&gt; &lt;g id="g9" style="stroke:#828282;stroke-opacity:1" transform="translate(2.1709556,1.8281712)"&gt; &lt;path d="M 21.205399,62.1339 H -6.7946007 c -1.104,0 -2,0.896 -2,2 v 18 c 0,1.104 0.896,2 2,2 H 21.205399 c 1.104,0 2,-0.896 2,-2 v -18 c 0,-1.104 -0.896,-2 -2,-2 z m -1.795,2 -12.2049997,12 -12.109,-12 z m -26.2049997,18 v -16.994 l 9.589,9.589 -7.528,7.405 z m 4.985,0 6.081,-5.927 1.58,1.579 c 0.781,0.781 2.047,0.781 2.829,0 l 1.5309997,-1.531 6.081,5.879 z m 23.0149997,0 h -1.939 l -7.527,-7.405 9.466,-9.467 z" id="path7" style="fill:#828282;stroke:#828282;stroke-opacity:1" inkscape:connector-curvature="0"&gt;&lt;/path&gt; &lt;/g&gt; &lt;/g&gt; &lt;/g&gt; &lt;/g&gt; &lt;g id="g16" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g18" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g20" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g22" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g24" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g26" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g28" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g30" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g32" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g34" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g36" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g38" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g40" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g42" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;g id="g44" transform="translate(0,-48)"&gt; &lt;/g&gt; &lt;/svg&gt;&lt;/span&gt; Daniel Nüst&lt;/a&gt;, [ifgi](https://www.uni-muenster.de/Geoinformatics/en/), [University of Münster](https://www.uni-muenster.de/)
 
 --------
 
@@ -591,15 +593,15 @@ class: inverse
 
 --
 
-#### _low tech & high tech_ approaches exist (CODECHECK & o2r, [and more](https://arxiv.org/abs/2001.00484)), but we need individuals to be leaders and you can be one by adjusting your habits
+#### _low tech &amp; high tech_ approaches exist (CODECHECK &amp; o2r, [and more](https://arxiv.org/abs/2001.00484)), but we need individuals to be leaders and you can be one by adjusting your habits
 
 --
 
-#### _burden_ mostly on author, but _benefits_ clear and immediate > start early {in career, in project}
+#### _burden_ mostly on author, but _benefits_ clear and immediate &gt; start early {in career, in project}
 
 --
 
-#### _marathon_ to change habits and community practice > must push as individuals to achieve the needed _cultural change_
+#### _marathon_ to change habits and community practice &gt; must push as individuals to achieve the needed _cultural change_
 
 --
 
@@ -666,20 +668,128 @@ class: blackout
 _The ERC-based publication process: a research workspace is prepared for a URC, which is validated to become an ERC, which turns into an RERC after peer review, and eventually published as a PERC to be used, e.g. for subsequent cycles._
 
 **https://doi.org/10.1045/january2017-nuest**
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
 
-```{r copy_slides_to_docs, include=FALSE}
-file.copy(from = "slides.html",
-          to = file.path("../docs", paste0(basename(getwd()), ".html")),
-          overwrite = TRUE)
-```
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
 
-```{r create_pdf, eval=FALSE, include=FALSE}
-current_file <- basename(rstudioapi::getSourceEditorContext()$path)
-system(paste0("cat ", current_file, " | grep -v '^--$' > print.Rmd"))
-rmarkdown::render("print.Rmd", "xaringan::moon_reader")
-xaringan::decktape(file = "print.html", output = "slides.pdf", docker = TRUE)
-file.copy(from = "slides.pdf",
-          to = file.path("../docs", paste0(basename(getwd()), ".pdf")),
-          overwrite = TRUE)
-file.remove("slides.pdf", "print.html", "print.Rmd")
-```
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
