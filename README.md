@@ -5,6 +5,10 @@
 - `2020-01_ms-RSE-Daniel`: short slide deck (~ 10 minutes) given by Daniel at a local RSE community meetup, download as [PDF](https://codecheckers.github.io/slides/2020-01_ms-RSE_Daniel.pdf)
 - `2020-05_ReproHack`: slide deck for talk "Research compendia enable code review during peer review" (~ 15 minutes) given by Daniel at the [Remote ReproHack](https://n8cir.org.uk/events/remote-reprohack/), download as [PDF](https://codecheckers.github.io/slides/2020-05_ReproHack.pdf), view [HTML](https://codecheckers.github.io/slides/2020-05_ReproHack.html)
 
+Slides archived on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3855440.svg)](https://doi.org/10.5281/zenodo.3855440)
+
 ## How to add a talk
 
 - Create a directory `YYYY-MM_EVENT`
