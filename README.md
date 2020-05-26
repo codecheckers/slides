@@ -5,6 +5,12 @@
 - `2020-01_ms-RSE-Daniel`: short slide deck (~ 10 minutes) given by Daniel at a local RSE community meetup, download as [PDF](https://codecheckers.github.io/slides/2020-01_ms-RSE_Daniel.pdf)
 - `2020-05_ReproHack`: slide deck for talk "Research compendia enable code review during peer review" (~ 15 minutes) given by Daniel at the [Remote ReproHack](https://n8cir.org.uk/events/remote-reprohack/), download as [PDF](https://codecheckers.github.io/slides/2020-05_ReproHack.pdf), view [HTML](https://codecheckers.github.io/slides/2020-05_ReproHack.html)
 
+## How to add a talk
+
+- Create a directory `YYYY-MM_EVENT`
+- If you only have a PDF, add it to the directory
+- If you have sources and output files, put the sources in the directory and render the output files to the `/docs` directory; the `/docs` directory is published as a GitHub page, so you can access files directly at `https://codecheck.org.uk/slides/<FILE NAME IN DOCS DIRECTORY>`
+
 ## License
 
 Except where otherwise noted, files in this repository are licensed under a [Creative Commons Attribution Share-Alike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
