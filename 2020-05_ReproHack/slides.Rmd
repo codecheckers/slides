@@ -3,7 +3,7 @@ title: "Research compendia enable code review during peer review"
 subtitle: "<br />with CODECHECK and Opening Reproducible Research (o2r)<br />https://codecheck.org.uk/ | https://o2r.info"
 author: "Daniel Nüst @ <a href='https://n8cir.org.uk/events/remote-reprohack/'>Remote ReproHack</a>, May 14, 2020"
 institute: "Institute for Geoinformatics, University of Münster | http://nüst.de<br />Reproducibility Committee Chair at <a href='https://agile-online.org/conference-2020/home-2020'>AGILE</a>"
-date: "`r Sys.Date()`<br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />"
+date: "<a href='https://doi.org/10.5281/zenodo.3855440'><img src='https://zenodo.org/badge/DOI/10.5281/zenodo.3855440.svg' alt='Zenodo DOI'></a><br/><a href='https://codecheck.org.uk/slides/2020-05_ReproHack.pdf' title='PDF version of the slides'>Slides PDF</a><br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -609,7 +609,11 @@ class: inverse
 
 ### THANK YOU!
 
-Slides: **https://github.com/codecheckers/slides**
+Slides:
+
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3855440.svg)](https://doi.org/10.5281/zenodo.3855440)
+- [PDF](https://codecheck.org.uk/slides/2020-05_ReproHack.pdf)
+- **https://github.com/codecheckers/slides**
 
 ???
 
