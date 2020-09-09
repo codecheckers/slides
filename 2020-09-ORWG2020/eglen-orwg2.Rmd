@@ -1,0 +1,238 @@
+---
+output:
+  xaringan::moon_reader:
+    self_contained: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+<style>
+h1   {color: rgb(0, 128, 128);}
+h2   {color: rgb(0, 128, 128);}
+h3   {color: rgb(0, 128, 128);}
+h4   {color: rgb(0, 128, 128);}
+
+ 
+ 
+/* .remark-slide-content { */
+/*   padding-top: 20px; */
+/*   padding-left: 20px; */
+/*   padding-right: 20px; */
+/*   padding-bottom: 20px; */
+/* } */
+.remark-slide-content > h1:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.remark-slide-content > h2:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a:link {
+    color:  #1f618d;
+}
+
+a:visited {
+    color:  #1f618d;
+}
+
+
+<!-- .remark-slide-number { -->
+<!--   font-size: 40pt; -->
+<!--   margin-bottom: -11.6px; -->
+<!--   margin-right: 10px; -->
+<!--   color: #FF00FF; /* white */ -->
+<!--   opacity: 1; /* default: 0.5 */ -->
+<!-- } -->
+
+.small { font-size: 70% }
+</style>
+
+```{r,include=FALSE}
+require(printr)
+require(knitr)
+require(xtable)
+pbr = function(text) {
+  x = '<div style="font-size: 60%; position: absolute; right: 15%;   width: fit-content; height: fit-content; top:95%; z-index:10">'
+  sprintf("%s%s</div>", x, text)
+}
+doi = function(doi) {
+  ##text=sprintf("[%s](http://dx.doi.org/%s)", doi, doi)
+  text=sprintf('<a href="http://dx.doi.org/%s">%s</a>', doi, doi)
+  pbr(text)
+}
+source('~/papers/talks/sje-xaringan.R')
+```
+
+## CODECHECK: An open-science initiative to facilitate sharing of computer programs and results presented in scientific publications.
+
+
+
+<br>
+
+```
+Stephen J Eglen                  Cambridge Computational Biology Institute
+https://sje30.github.io          University of Cambridge
+sje30@cam.ac.uk                  @StephenEglen
+
+Daniel Nüst                      Institute for Geoinformatics
+https://nordholmen.net           University of Münster
+daniel.nuest@uni-muenster.de     @nordholmen
+```
+
+
+HTML Slides: <http://bit.ly/eglen-orwg2> (CC-BY 4.0 license)
+
+#### Declarations
+
+Affiliate editor of *bioRxiv*.  Senior editor of *Scientific Data*.
+
+
+
+#### Acknowledgements
+
+Mozilla mini science grant, UK Software Sustainability Institute.
+
+Editors @ *Gigascience*, *eLife*, *Scientific Data*.
+
+
+
+---
+## Premise
+
+
+<br>
+
+`r im1("rr.svg", width=800)`
+
+
+We should be sharing material on the left, not the right.  "Paper as
+advert for Scholarship" [Buckheit & Donoho
+(1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+---
+## Approaches to code sharing
+
+<br>
+
+`r im1("barnes2010.png", width=700)`
+
+
+- Informal 'code buddy' system
+
+- Community-led *research compedia*.
+
+- Code Ocean [(Nature trial)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+- Certify reproducibility with confidential data (CASCAD) [(Pérignon et
+  al 2019)](http://dx.doi.org/10.1126/science.aaw2825)
+
+<!-- - CODECHECK takes a different approach . . . -->
+
+---
+## The CODECHECK philosophy
+
+- Systems like Code Ocean set the bar high by "making code
+  reproducible *forever* for *everyone*".
+
+- CODECHECK  simply asks "was the code reproducible *once* for
+  *someone* else?"
+
+- We check the code runs and generates the expected number of output
+  files.
+
+- The contents of those output files are not checked, but are
+  available for others to see.
+  
+- The validity of the code is *not* checked.
+---
+`r im1("codecheck_overview.svg", width=1000)`
+
+
+#### Four princicples underlying CODECHECK
+
+
+1. CODECHECKERS are **humans** and communication is key.
+
+2. CODECHECKERS **record** but don’t investigate or fix.
+
+3. **Credit** is given to CODECHECKERS.
+
+4. Workflows are scripted, **auditable**, and they work (or *worked once*).
+
+---
+### Who does the work?
+
+1. **AUTHOR** provides code/data and instructions on how to run.
+
+2. **CODECHECKER** runs code and writes certificate.
+
+3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
+   
+--
+
+### Who benefits?
+
+1. **AUTHOR** gets early check that "code works"; gets snapshot of
+   code archived and increased trust in stability of results.
+
+2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
+
+3. **PUBLISHER** Gets citable certificate with code/data bundle to
+   share and increases reputation of published articles.
+
+4. **PEER REVIEWERS** can see certificate rather than check code
+   themselves.
+
+5. **READER** Can check certificate and build upon work immediately.
+
+
+
+---
+## Our register of certificates
+
+<https://codecheck.org.uk/register/>
+<br>
+
+
+`r im1("codecheckregister-sep2020.png", width=700)`
+
+
+Example certificate: <https://zenodo.org/record/3865491/files/codecheck.pdf>
+
+---
+## "It ain't pretty, but it works" (Hilda Bastian)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+---
+## Limitations
+
+1. CODECHECKER time is valuable, so needs credit.
+
+2. Very easy to cheat the system, but who cares?
+
+3. Author's code/data must be freely available.
+
+4. Deliberately low threshold for gaining a certificate.
+
+5. High-performance compute is a resource drain.
+
+6. Cannot (yet) support all thinkable/existing workflows and languages.
+
+---
+## Next steps
+
+1. Embedding into journal workflows.
+
+2. Training a community of codecheckers.
+
+3. Funding for a codecheck editor ...
+
+
+For more information please see: <http://codecheck.org.uk> and [#CODECHECK](https://twitter.com/hashtag/CODECHECK?src=hashtag_click)
