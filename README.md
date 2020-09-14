@@ -6,7 +6,7 @@
 - `2020-05_ReproHack`: slide deck for talk "Research compendia enable code review during peer review" (~ 15 minutes) given by Daniel at the [Remote ReproHack](https://n8cir.org.uk/events/remote-reprohack/), download as [PDF](https://codecheckers.github.io/slides/2020-05_ReproHack.pdf), view [HTML](https://codecheckers.github.io/slides/2020-05_ReproHack.html)
 - `2020-09_ORWG2020`: slides for [UK Open Research Working Group](https://www.mrc-cbu.cam.ac.uk/conferences/uk-orwg2/)
   meeting. [HTML slides](https://bit.ly/eglen-orwg2) and [you tube video](https://www.youtube.com/watch?v=sAzvz-ZZYuU).
-- `2020-09_SpringerNature`: slides for meeting with editors. [HTML slides](https://codecheck.org.uk/slides/2020-09_SpringerNature.html)
+- `2020-09_SpringerNature`: slides for meeting with editors. [HTML slides](https://codecheck.org.uk/slides/2020-09_SpringerNature.html), [PDF](https://codecheck.org.uk/slides/2020-09_SpringerNature.pdf)
 
 Slides archived on Zenodo:
 
