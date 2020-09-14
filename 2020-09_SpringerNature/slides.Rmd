@@ -519,7 +519,7 @@ class: blackout
 - [Binder-ready](https://mybinder.org/) research compendium ![](https://mybinder.org/static/logo.svg)
 
 - Research compendium + container + bindings =<br/> [Executable Research Compendium](https://doi.org/10.1045/january2017-nuest) ([o2r.info/results/](https://o2r.info/results/))
-<div style="position: absolute; left: 75%; top:25%"><a href="https://doi.org/10.1045/january2017-nuest"><img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png"></a></div>
+<div style="position: absolute; left: 75%; top:25%"><a href="https://doi.org/10.1045/january2017-nuest"><img src="https://www.dlib.org/dlib/january17/nuest/nuest-fig1.png"></a></div>
 
 - [Ten Simple Rules for Writing Dockerfiles for Reproducible Data Science](https://doi.org/10.31219/osf.io/fsd7t)
 
