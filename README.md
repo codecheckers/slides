@@ -8,9 +8,9 @@
   meeting. [HTML slides](https://bit.ly/eglen-orwg2) and [you tube video](https://www.youtube.com/watch?v=sAzvz-ZZYuU).
 - `2020-09_SpringerNature`: slides for meeting with editors. [HTML slides](https://codecheck.org.uk/slides/2020-09_SpringerNature.html), [PDF](https://codecheck.org.uk/slides/2020-09_SpringerNature.pdf)
 
-Slides archived on Zenodo:
+Slides are archived regularly on Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3855440.svg)](https://doi.org/10.5281/zenodo.3855440)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3855439.svg)](https://doi.org/10.5281/zenodo.3855439)
 
 ## How to add a talk
 
