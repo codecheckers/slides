@@ -1,0 +1,243 @@
+---
+output:
+  xaringan::moon_reader:
+    self_contained: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+<style>
+h1   {color: rgb(0, 128, 128);}
+h2   {color: rgb(0, 128, 128);}
+h3   {color: rgb(0, 128, 128);}
+h4   {color: rgb(0, 128, 128);}
+
+ 
+ 
+/* .remark-slide-content { */
+/*   padding-top: 20px; */
+/*   padding-left: 20px; */
+/*   padding-right: 20px; */
+/*   padding-bottom: 20px; */
+/* } */
+.remark-slide-content > h1:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.remark-slide-content > h2:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a:link {
+    color:  #1f618d;
+}
+
+a:visited {
+    color:  #1f618d;
+}
+
+
+.small { font-size: 70% }
+</style>
+
+```{r,include=FALSE}
+source('sje-xaringan.R')
+```
+
+## CODECHECK: An Open Science initiative for the independent execution of computations underlying research articles during peer review to  improve reproducibility
+
+
+<br>
+
+```
+Stephen J Eglen                  Cambridge Computational Biology Institute
+https://sje30.github.io          University of Cambridge
+sje30@cam.ac.uk                  @StephenEglen
+
+Daniel Nüst                      Institute for Geoinformatics
+https://nordholmen.net           University of Münster
+daniel.nuest@uni-muenster.de     @nordholmen
+```
+
+
+HTML Slides: <http://bit.ly/codecheck21> (CC-BY 4.0 license)
+
+
+---
+## Paper
+
+These slides are to accompany our paper currently under review in
+F1000 Research:
+
+
+<https://f1000research.com/articles/10-253/v1>
+
+#### Declarations
+
+Affiliate editor of *bioRxiv*
+
+
+
+#### Acknowledgements
+
+Mozilla mini science grant, UK Software Sustainability Institute.
+
+Editors @ *Gigascience*, *eLife*, *Scientific Data*.
+
+---
+## Premise
+
+
+<br>
+
+`r im1("figs/rr.svg", width=800)`
+
+
+We should be sharing material on the left, not the right.
+
+"Paper as advert for Scholarship" [(Buckheit & Donoho, 1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+---
+## Approaches to code sharing
+
+<br>
+
+
+- [Barnes (2010)](https://dx.doi.org/10.1038/467753a)
+`r im1("figs/barnes2010.png", width=700)`
+
+
+- Informal 'code buddy' system
+
+- Community-led *research compedia*.
+
+- Code Ocean [(Nature trial)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+- Certify reproducibility with confidential data (CASCAD) [(Pérignon et
+  al 2019)](https://science.sciencemag.org/content/365/6449/127)
+
+<!-- - CODECHECK takes a different approach . . . -->
+
+---
+## The CODECHECK philosophy
+
+- Systems like Code Ocean set the bar high by "making code
+  reproducible *forever* for *everyone*".
+
+- CODECHECK  simply asks "was the code reproducible *once* for
+  *someone* else?"
+
+- We check the code runs and generates the expected number of output
+  files.
+
+- The contents of those output files are not checked, but are
+  available for others to see.
+  
+- The validity of the code is *not* checked.
+---
+
+## CODECHECK process
+
+<br>
+
+`r im1("figs/codecheck_overview.svg", width=1000)`
+
+
+---
+## Variations in a codecheck
+
+<br>
+
+`r im1("figs/codecheck_dimensions.svg", width=1000)`
+
+---
+## Core principles
+
+1. Codecheckers record but don't investigate or fix.
+
+2. Communication between humans is key.
+
+3. Credit is given to codecheckers.
+
+4. Workflows must be auditable.
+
+5. Open by default and transitional by disposition.
+
+---
+## Who does the work?
+
+1. **AUTHOR** provides code/data and instructions on how to run.
+
+2. **CODECHECKER** runs code and writes certificate.
+
+3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
+   
+--
+
+## Who benefits?
+
+1. **AUTHOR** gets early check that "code works"; gets snapshot of
+   code archived and increased trust in stability of results.
+
+2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
+
+3. **PUBLISHER** Gets citable certificate with code/data bundle to
+   share and increases reputation of published articles.
+
+4. **PEER REVIEWERS** can see certificate rather than check code
+   themselves.
+
+5. **READER** Can check certificate and build upon work immediately.
+
+
+
+---
+## Our register of certificates
+
+<https://codecheck.org.uk/register/>
+<br>
+
+
+`r im1("figs/codecheckregister-sep2020.png", width=700)`
+
+
+Example certificate: <https://zenodo.org/record/3865491/files/codecheck.pdf>
+
+---
+## "It ain't pretty, but it works" (Hilda Bastian)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+---
+## Limitations
+
+1. CODECHECKER time is valuable, so needs credit.
+
+2. Very easy to cheat the system, but who cares?
+
+3. Author's code/data must be freely available.
+
+4. Deliberately low threshold for gaining a certificate.
+
+5. High-performance compute is a resource drain.
+
+6. Cannot (yet) support all thinkable/existing workflows and languages.
+
+---
+## Next steps
+
+1. Embedding into journal workflows.
+
+2. Training a community of codecheckers.
+
+3. Funding for a codecheck editor.
+
+4. Come and [get involved](https://codecheck.org.uk/get-involved/)
+
+
+For more information please see: <http://codecheck.org.uk> and [#CODECHECK](https://twitter.com/hashtag/CODECHECK?src=hashtag_click)
