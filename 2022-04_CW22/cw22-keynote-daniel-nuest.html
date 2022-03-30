@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Code review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel Nüst @ Collaborations Workshop 2022 (CW22), 2022-04-04" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="codecheck.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Code review
+## <br />during peer review with CODECHECK and at the AGILE conference <br /><a href="https://codecheck.org.uk/" class="uri">https://codecheck.org.uk/</a> | <a href="https://reproducible-agile.github.io/" class="uri">https://reproducible-agile.github.io/</a>
+### Daniel Nüst @ <a href='https://software.ac.uk/cw22'>Collaborations Workshop 2022</a> (CW22), 2022-04-04
+### Institute for Geoinformatics, University of Münster | <a href="http://nüst.de" class="uri">http://nüst.de</a><br />Reproducibility Committee Chair at <a href='https://agile-online.org/conference-2020/home-2020'>AGILE</a>
+### Slides: <a href='https://bit.ly/cw22-keynote-daniel' title='HTML version of the slides'>https://bit.ly/cw22-keynote-daniel</a><br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />
+
+---
+
+
+## Agenda
+
+.pull-left[
+TODO: CODECHECK logo
+]
+
+.pull-right[
+TODO: Repro AGILE logo
+]
+
+---
+## CODECHECK: Evaluating the reproducibility of computational results reported in scientific journals
+
+```
+Stephen J Eglen                  Cambridge Computational Biology Institute
+https://sje30.github.io          University of Cambridge
+sje30@cam.ac.uk                  @StephenEglen
+
+Daniel Nüst                      Institute for Geoinformatics
+https://nordholmen.net           University of Münster
+daniel.nuest@uni-muenster.de     @nordholmen
+```
+
+HTML Slides: &lt;https://bit.ly/cw22-keynote-daniel&gt; (CC-BY 4.0 license)
+
+---
+## Declarations and acknowledgements
+
+### Declarations
+
+Reproducibility Chair AGILE conference
+
+These slides accompany our paper: &lt;https://f1000research.com/articles/10-253/&gt;
+
+### Acknowledgements
+
+CODECHECK: Mozilla mini science grant, UK Software Sustainability Institute; editors @ *Gigascience*, *eLife*, *Scientific Data*
+
+Reproducible AGILE: [AGILE Initiative](https://agile-online.org/index.php/agile-actions/current-initiatives/reproducible-publications-at-agile-conferences)
+
+
+---
+class: highlight-last-item
+## CODECHECK in one slide
+
+1. We take your paper, code and datasets.
+
+--
+
+2. We run your code on your data.
+
+--
+
+3. If our results match your results, go to step 5.
+
+--
+
+4. Else we talk to you to find out where code broke. If you fix your code or data, we return to step 2 and try again.
+
+--
+
+5. We write a report summarising that we could reproduce your outputs.
+
+--
+
+6. We work with you to freely share your paper, code, data and our reproduction.
+
+---
+## Premise
+
+TODO: codecheck barriers figure
+
+Figure 1 of https://doi.org/10.12688/f1000research.51738.1
+
+
+**We should be sharing material on the left, not the right.**
+
+"Paper as advert for Scholarship" [(Buckheit &amp;amp; Donoho, 1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+???
+
+The left half of the diagram shows a diverse range of materials used within a laboratory. These materials are often then condensed for sharing with the outside world via the research paper, a static PDF document. Working backwards from the PDF to the underlying materials is impossible. This prohibits reuse and is not only non-transparent for a specific paper but is also ineffective for science as a whole. By sharing the materials on the left, others outside the lab can enhance this work.
+
+---
+## Approaches to code sharing
+
+- [Barnes (2010)](https://dx.doi.org/10.1038/467753a): "Publish your computer code: it is good enough"
+
+- Informal &amp;#39;code buddy&amp;#39; system
+
+- Community-led *research compedia*.
+
+- Code Ocean [(Nature trial)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+- Certify reproducibility with confidential data (CASCAD) [(Pérignon et
+  al 2019)](https://science.sciencemag.org/content/365/6449/127)
+
+???
+
+CODECHECK takes a different approach...
+
+---
+## The CODECHECK philosophy
+
+- Systems like Code Ocean set the bar high by &amp;quot;making code
+  reproducible *forever* for *everyone*&amp;quot;.
+
+- CODECHECK  simply asks &amp;quot;was the code executable *once* for
+  *someone* else?&amp;quot;
+
+- We check the code runs and generates the expected number of output
+  files.
+
+- The contents of those output files must not strictly be checked, though in practice until today they are; in any case outputs
+  available for others (authors) to see.
+  
+- The validity of the code is *not* checked.
+---
+
+## The CODECHECK example process implementation
+
+TODO CODECHECK process figure
+
+
+Figure 2 of https://doi.org/10.12688/f1000research.51738.1
+
+???
+
+The left half of the diagram shows a diverse range of materials used within a laboratory. These materials are often then condensed for sharing with the outside world via the research paper, a static PDF document. Working backwards from the PDF to the underlying materials is impossible. This prohibits reuse and is not only non-transparent for a specific paper but is also ineffective for science as a whole. By sharing the materials on the left, others outside the lab can enhance this work.
+
+
+---
+## Variations in a codecheck
+
+TODO CODECHECK variants figure
+
+
+---
+## Core principles
+
+1. Codecheckers record but don&amp;#39;t investigate or fix.
+
+2. Communication between humans is key.
+
+3. Credit is given to codecheckers.
+
+4. Workflows must be auditable.
+
+5. Open by default and transitional by disposition.
+
+---
+## Who does the work?
+
+1. **AUTHOR** provides code/data and instructions on how to run.
+
+2. **CODECHECKER** runs code and writes certificate.
+
+3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
+   
+
+---
+## Who benefits?
+
+1. **AUTHOR** gets early check that &amp;quot;code works&amp;quot;; gets snapshot of
+   code archived and increased trust in stability of results.
+
+2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
+
+3. **PUBLISHER** Gets citable certificate with code/data bundle to
+   share and increases reputation of published articles.
+
+4. **PEER REVIEWERS** can see certificate rather than check code
+   themselves.
+
+5. **READER** Can check certificate and build upon work immediately.
+
+
+---
+## Our register of certificates
+
+&lt;https://codecheck.org.uk/register/&gt;
+
+TODO screenshot register
+
+---
+
+TODO screenshots example certificate
+
+---
+## &amp;quot;It ain&amp;#39;t pretty, but it works&amp;quot; (H. Bastian)
+
+.pull-left[
+(The most prominent check until today!)
+]
+
+.pull-right[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Independent review &lt;a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw"&gt;@StephenEglen&lt;/a&gt; confirmed that &lt;a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw"&gt;@MRC_Outbreak&lt;/a&gt; team&amp;#39;s &lt;a href="https://twitter.com/hashtag/COVID19?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#COVID19&lt;/a&gt; simulation is reproducible: thumbs up from code-checking efforts &lt;a href="https://twitter.com/nature?ref_src=twsrc%5Etfw"&gt;@nature&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/COVID19?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#COVID19&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/covid19science?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#covid19science&lt;/a&gt;&lt;a href="https://t.co/vpa7CkPZjV"&gt;https://t.co/vpa7CkPZjV&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sabine L.van Elsland (@SabineLvE) &lt;a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw"&gt;June 10, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+]
+
+---
+## Limitations
+
+1. CODECHECKER time is valuable, so needs credit.
+
+2. Very easy to cheat the system, but who cares?
+
+3. Authors' code/data must be freely available.
+
+4. Deliberately low threshold for gaining a certificate.
+
+5. High-performance compute is a resource drain.
+
+6. Cannot (yet) support all thinkable/existing workflows and languages.
+
+---
+## Next steps
+
+1. Embedding into journal workflows.
+
+2. Training a community of codecheckers (❤️ [ReproHack](https://www.reprohack.org/)).
+
+3. Funding for a codecheck editor.
+
+4. Come and [**get involved**](https://codecheck.org.uk/get-involved/)
+
+
+For more information please see: &lt;http://codecheck.org.uk&gt; and [#CODECHECK](https://twitter.com/hashtag/CODECHECK?src=hashtag_click)
+
+---
+# Reproducible AGILE
+
+&lt;https://reproducible-agile.github.io/&gt;
+
+2017, ‘18 &amp; ‘19: Workshops on reproducibility
+2019: Reproducible publications at AGILE conferences (initiative)
+2020: AGILE Reproducible Paper Guidelines v1
+2020: First AGILE reproducibility review; guidelines v2
+2021: Guidelines mandatory; repro reviews linked from papers: &lt;https://agile-giss.copernicus.org/articles/2/index.html&gt;
+
+---
+# AGILE Reproducible Paper Guidelines
+
+https://doi.org/10.17605/OSF.IO/CB7Z8 
+
+Promotion, not exclusion
+Data and software availability section
+Author &amp; reviewer guidelines
+Reproducibility checklist
+
+**14 successful reproductions in 2020 &amp; '21**
+
+---
+# Review process
+
+Reproducibility review after accept/reject decisions
+Reproducibility review &amp; communication
+Community conference &amp; volunteers
+Badges on proceedings website, article website with link, and first article page
+(💖 Copernicus!)
+
+
+TODO screenshot proceedings
+
+---
+# How to put your community on a path towards more reproducibility in 5 ~~easy~~ hard steps
+
+1. Build a team of enthusiasts (workshop, social events)
+1. Assess the current state and raise awareness (workshop, paper)
+1. Institutional support (🙏 AGILE Council 🙏 + committee chairs)
+1. Positive encouragement (no reproduction != bad science)
+1. Keep at it!
+
+
+---
+# Next
+
+--
+
+2022
+
+--
+
+Grow reproducibility reviewer team
+
+--
+
+Continue discourse (meaning of rprdcblty)
+Re-assess new papers &gt; impact?
+Towards opening scholarship
+Scope, requirements, acceptance condition?
+Open review if tenured? Format-free first submission
+CRediT
+
+--
+
+Phase out when standard practice...
+
+
+---
+# What is RSE(ng) about this?
+
+
+
+---
+
+TODO: cultural change turtle
+
+
+???
+
+Computational reproducibility is still perceived as hard, much too rarely taught or checked, and if achieved it does not get enough credit.
+Irreproducibility is not a technological problem, but a social and systemic one.
+CODECHECK and Reproducible AGILE try to tackle a small part of all the bigger problems and be kind in the process.
+Cultural change takes time.
+
+**With the few seconds left, I want to answer two more questions:**
+
+---
+# Code review != reproducibility review
+
+TODO https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111265777e2_10_262
+
+ROpenSci
+
+pyOpenSci
+
+JORS
+
+JOSS
+
+Code Review Community Working Group
+
+???
+
+---
+**One thing** on more reproducible research publications:
+
+--
+
+# Have a README: all else is details.
+
+(Inspired by Greg Wilson’s Teching Tech Together (http://teachtogether.tech/en/index.html) Rule 1.)
+
+???
+
+If your remember ONE thing from this talk.
+
+---
+class: blackout
+
+# Encore
+
+
+---
+# Defintion
+
+![How the Turing Way defines reproducible research¶](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+
+CC-BY 4.0 | © The Turing Way Community | https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html 
+
+---
+# Learn more about code execution practices at journals and conferences
+
+**&lt;https://osf.io/x32nc&gt;**
+
+Daniel Nüst, Heidi Seibold, Stephen Eglen, Lea Schulz-Vanheyden, Limor Peer, Josef Spillner
+
+TODO more 
+
+---
+# Deep dive
+
+TODO: KE report
+
+https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111cd074ad3_0_215
+
+and 
+
+https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111cd074ad3_0_229
+
+---
+# Reproducible AGILE and CODECHECK: Highlights of Lessons learned
+
+
+Spectrum or layers of reproducibility very apparent
+
+Effect of guidelines at AGILE: improved reproducibility, community discourse
+
+Reproducibility reports/CODECHECK certificates full of recommendations for improvement, often well received by authors, many included in revised submission
+
+Good practices spread slowly, establishing a process is tedious, needs time until familiarity
+
+Challenges for reproducibility reviewer: Inconsistencies and disconnects (figures), lack of documentation, unknown runtimes vs. no subsets of data, lack of reprod. guidance
+
+Reproductions are rewarding and educational, matching expertises tricky
+
+Communication is without alternative
+
+Safety net (👀), not security
+
+---
+# What can communities and institutions do?
+
+Introduce reproducibility reviews - CODECHECK (or not) - at your journals, labs, collaborations!
+
+Workshops on RCR, ReproHacks
+
+Provide support (R2S2, PhD edu.)
+
+Rewards and incentives
+
+Community discourse
+
+Awareness &gt; Change
+
+
+---
+# Throw technology at it
+
+https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g10fe80a6eec_0_163
+
+---
+**Limitations**
+
+# _Digital information lasts forever, or five years - whichever comes first._
+
+Rothenberg, Jeff. 1995. “Ensuring the Longevity of Digital Documents.” Scientific American 272 (1): 42–47. [JSTOR](https://www.jstor.org/stable/e24980087)
+via https://twitter.com/snet_jklump/status/1141934045820887040?s=09
+
+---
+# Preproducibility
+
+TODO
+
+---
+# Reproducibility spectrum
+
+TODO
+
+---
+# PI-shaped scientists
+
+Traditional vs. modern
+
+TODO
+
+---
+# Reproducibility is "more work"
+
+TODO figure
+
+Quintana, D. S. (2020, November 28). Five things about open and reproducible science that every early career researcher should know. https://doi.org/10.17605/OSF.IO/DZTVQ
+
+&lt;https://twitter.com/dsquintana/status/1331979334245097477&gt;
+
+---
+# GIScience assessment
+
+TODO integrated mega figure
+
+???
+
+Everybody should do this for their discipline
+
+---
+
+TODO screenshots guidelines
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
