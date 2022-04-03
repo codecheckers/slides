@@ -1,9 +1,9 @@
 ---
-title: "Code review"
-subtitle: "<br />during peer review with CODECHECK and at the AGILE conference <br />https://codecheck.org.uk/ | https://reproducible-agile.github.io/"
+title: "Code execution during peer review"
+subtitle: "with CODECHECK and at the AGILE conference <br />https://codecheck.org.uk/ | https://reproducible-agile.github.io/"
 author: "Daniel Nüst @ <a href='https://software.ac.uk/cw22'>Collaborations Workshop 2022</a> (CW22), 2022-04-04"
-institute: "Institute for Geoinformatics, University of Münster | http://nüst.de<br />Reproducibility Committee Chair at <a href='https://agile-online.org/conference-2020/home-2020'>AGILE</a>"
-date: "Slides: <a href='https://bit.ly/cw22-keynote-daniel' title='HTML version of the slides'>https://bit.ly/cw22-keynote-daniel</a><br/><br/><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />"
+institute: "Institute for Geoinformatics, University of Münster | http://nüst.de | <a href='https://twitter.com/nordholmen'>@nordholmen</a>"
+date: "Slides: <a href='https://bit.ly/cw22-keynote-daniel' title='HTML version of the slides'>https://bit.ly/cw22-keynote-daniel</a><br/><br/>DOI:<a href='https://doi.org/10.6084/m9.figshare.19487573'>10.6084/m9.figshare.19487573</a><br /><br /><small><a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA 4.0</a></small><br/><img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg' />"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -18,12 +18,47 @@ output:
 
 ## Agenda
 
+HTML slides: <https://bit.ly/cw22-keynote-daniel>
+
+PDF slides: <https://doi.org/10.6084/m9.figshare.19487573>
+
+--
+
 .pull-left[
-TODO: CODECHECK logo
+![:scale 120%](https://codecheck.org.uk/img/codecheck_logo.svg)
+]
+
+--
+
+.pull-right[
+![:scale 70%](https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.svg)
+
+<https://reproducible-agile.github.io>
+]
+
+---
+# Declarations and acknowledgements
+
+## Declarations
+
+Reproducibility Chair AGILE conference
+
+CODECHECK paper: <https://f1000research.com/articles/10-253/v2>
+
+## Acknowledgements
+
+**CODECHECK**: Mozilla mini science grant, UK SSI; editors @ *Gigascience*, *eLife*, *Scientific Data*
+
+**Reproducible AGILE** received funding as an [AGILE Initiative](https://agile-online.org/index.php/agile-actions/current-initiatives/reproducible-publications-at-agile-conferences)
+
+All work was supported by the project Opening Reproducible Research ([o2r](https://o2r.info)) with funding by the German Research Foundation (Deutsche Forschungsgemeinschaft, DFG) under project numbers PE&nbsp;1632/10-1 and PE&nbsp;1632/17-1.
+
+.pull-left[
+[![:scale 40%](https://o2r.info/public/images/ifgilogo.svg)](https://www.uni-muenster.de/Geoinformatics/)
 ]
 
 .pull-right[
-TODO: Repro AGILE logo
+[![:scale 50%](https://o2r.info/public/images/wwulogo.svg)](https://www.uni-muenster.de/)
 ]
 
 ---
@@ -39,27 +74,16 @@ https://nordholmen.net           University of Münster
 daniel.nuest@uni-muenster.de     @nordholmen
 ```
 
-HTML Slides: <https://bit.ly/cw22-keynote-daniel> (CC-BY 4.0 license)
-
----
-## Declarations and acknowledgements
-
-### Declarations
-
-Reproducibility Chair AGILE conference
-
-These slides accompany our paper: <https://f1000research.com/articles/10-253/>
-
-### Acknowledgements
-
-CODECHECK: Mozilla mini science grant, UK Software Sustainability Institute; editors @ *Gigascience*, *eLife*, *Scientific Data*
-
-Reproducible AGILE: [AGILE Initiative](https://agile-online.org/index.php/agile-actions/current-initiatives/reproducible-publications-at-agile-conferences)
+### https://codecheck.org.uk/
 
 
 ---
 class: highlight-last-item
 ## CODECHECK in one slide
+
+Premise: paper submitted to peer review.
+
+--
 
 1. We take your paper, code and datasets.
 
@@ -77,7 +101,7 @@ class: highlight-last-item
 
 --
 
-5. We write a report summarising that we could reproduce your outputs.
+5. We write a report summarising that we could reproduce your outputs (document error messages, possibly mismatches we see)
 
 --
 
@@ -86,18 +110,30 @@ class: highlight-last-item
 ---
 ## Premise
 
-TODO: codecheck barriers figure
+.pull-left[
+![](https://raw.githubusercontent.com/codecheckers/paper/master/figs/rr.svg)
 
-Figure 1 of https://doi.org/10.12688/f1000research.51738.1
-
+Figure 1 of <https://doi.org/10.12688/f1000research.51738.2>
 
 **We should be sharing material on the left, not the right.**
 
 "Paper as advert for Scholarship" [(Buckheit &amp; Donoho, 1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+]
+
+--
+
+.pull-right[
+
+![](https://i.giphy.com/media/mBpVZelPdn269zc07N/giphy.webp)
+
+![:credit](https://media0.giphy.com/media/mBpVZelPdn269zc07N/giphy.gif)
+]
 
 ???
 
 The left half of the diagram shows a diverse range of materials used within a laboratory. These materials are often then condensed for sharing with the outside world via the research paper, a static PDF document. Working backwards from the PDF to the underlying materials is impossible. This prohibits reuse and is not only non-transparent for a specific paper but is also ineffective for science as a whole. By sharing the materials on the left, others outside the lab can enhance this work.
+
+**As we all know from advertising, there is a big disconnect between what is advertised, and what the actual experience is like.**
 
 ---
 ## Approaches to code sharing
@@ -106,7 +142,7 @@ The left half of the diagram shows a diverse range of materials used within a la
 
 - Informal &#39;code buddy&#39; system
 
-- Community-led *research compedia*.
+- Community-led *research compedia* - <https://research-compendium.science/>
 
 - Code Ocean [(Nature trial)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
 
@@ -120,53 +156,60 @@ CODECHECK takes a different approach...
 ---
 ## The CODECHECK philosophy
 
-- Systems like Code Ocean set the bar high by &quot;making code
-  reproducible *forever* for *everyone*&quot;.
+- Systems like Code Ocean set the bar high by "making code reproducible *forever* for *everyone*"
 
-- CODECHECK  simply asks &quot;was the code executable *once* for
-  *someone* else?&quot;
+- CODECHECK  simply asks "was the code executable *once* for *someone* else?""
 
-- We check the code runs and generates the expected number of output
-  files.
+- We check the code runs and generates the expected number of output files
 
-- The contents of those output files must not strictly be checked, though in practice until today they are; in any case outputs
-  available for others (authors) to see.
+- The contents of those output files must not strictly be checked, though in practice until today they are; in any case outputs   available for others (authors) to see
   
-- The validity of the code is *not* checked.
+- The validity of the code is *not* checked; complement to scientific peer review
+
+--
+
+More details see [paper](https://doi.org/10.12688/f1000research.51738.2) and [CODECHECK principles](https://codecheck.org.uk/#the-codecheck-principles).
+
 ---
+### The CODECHECK example process implementation
 
-## The CODECHECK example process implementation
+![:scale 80%](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
 
-TODO CODECHECK process figure
-
-
-Figure 2 of https://doi.org/10.12688/f1000research.51738.1
+Figure 2 of <https://doi.org/10.12688/f1000research.51738.2>
 
 ???
 
-The left half of the diagram shows a diverse range of materials used within a laboratory. These materials are often then condensed for sharing with the outside world via the research paper, a static PDF document. Working backwards from the PDF to the underlying materials is impossible. This prohibits reuse and is not only non-transparent for a specific paper but is also ineffective for science as a whole. By sharing the materials on the left, others outside the lab can enhance this work.
+**Only briefly**
 
-
----
-## Variations in a codecheck
-
-TODO CODECHECK variants figure
-
+Our workflow is just one of many possibilities of a CODECHECK workflow. Here we consider several dimensions in a space of possible CODECHECK workflows (Figure 3). These aspects touch on timing, responsibilities, and transparency.
 
 ---
-## Core principles
+# Variations in a codecheck
 
-1. Codecheckers record but don&#39;t investigate or fix.
+![:scale 100%](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_dimensions.svg)
 
-2. Communication between humans is key.
+Figure 3 of <https://doi.org/10.12688/f1000research.51738.2>
 
-3. Credit is given to codecheckers.
+???
 
-4. Workflows must be auditable.
-
-5. Open by default and transitional by disposition.
+**Skip**
 
 ---
+# Core principles
+
+### 1. Codecheckers record but don't investigate or fix.
+
+### 2. Communication between humans is key.
+
+### 3. Credit is given to codecheckers.
+
+### 4. Workflows must be auditable.
+
+### 5. Open by default and transitional by disposition.
+
+---
+
+.pull-left[
 ## Who does the work?
 
 1. **AUTHOR** provides code/data and instructions on how to run.
@@ -174,9 +217,11 @@ TODO CODECHECK variants figure
 2. **CODECHECKER** runs code and writes certificate.
 
 3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
-   
+]
 
----
+--
+
+.pull-right[
 ## Who benefits?
 
 1. **AUTHOR** gets early check that &quot;code works&quot;; gets snapshot of
@@ -191,29 +236,32 @@ TODO CODECHECK variants figure
    themselves.
 
 5. **READER** Can check certificate and build upon work immediately.
-
+]
 
 ---
-## Our register of certificates
+class: inverse
 
 <https://codecheck.org.uk/register/>
 
-TODO screenshot register
+<iframe src="https://codecheck.org.uk/register/" style="position: absolute; height: 80%; width: 90%; border: none"></iframe>
 
 ---
+# Example certificate
 
-TODO screenshots example certificate
+Figure 4 of <https://doi.org/10.12688/f1000research.51738.2> (click image to scroll)
 
----
-## &quot;It ain&#39;t pretty, but it works&quot; (H. Bastian)
+<iframe src="https://f1000researchdata.s3.amazonaws.com/manuscripts/57857/791c34df-91c1-4b3a-bdbd-e478dc8e4899_figure4.gif" style="position: absolute; height: 60%; width: 90%; border: none"></iframe>
+<div style="clear: both;"></div>
 
-.pull-left[
-(The most prominent check until today!)
-]
+???
 
-.pull-right[
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-]
+Figure 4 shows pages 1–4 (of 10) of an example certificate to check predictions of COVID-19 spread across the USA.
+Figure 4A shows the certificate number and its DOI, which points to the certificate and any supplemental files on Zenodo. The CODECHECK logo is added for recognition and to denote successful reproduction.
+Figure 4B provides the key metadata extracted from codecheck.yml; it names the paper that was checked (title, DOI), the authors, the codechecker, when the check was performed, and where code/data are available.
+Figure 4C shows a textual summary of how the CODECHECK was performed and key findings.
+Figure 4D (page 2 of the certificate) shows the outputs that were generated based on the MANIFEST of output files in the CODECHECK. It shows the file name (Output), the description stating to which figure/table each file should be compared in the original paper (Comment), and the file size.
+Page 3 of the certificate, Figure 4E gives detailed notes from the codechecker, here documenting what steps were needed to run the code and that the code took about 17 hours to complete.
+Page 4 of the certificate shows the first output generated by the CODECHECK Figure 4F. In this case, the figure matched figure 4 of 52. The remaining pages of the certificate show other outputs and the computing environment in which the certificate itself was created (not shown here).
 
 ---
 ## Limitations
@@ -233,11 +281,11 @@ TODO screenshots example certificate
 ---
 ## Next steps
 
-1. Embedding into journal workflows.
+1. Embedding into **journals**' workflows.
 
-2. Training a community of codecheckers (❤️ [ReproHack](https://www.reprohack.org/)).
+2. **Training a community** of codecheckers (❤️ [ReproHack](https://www.reprohack.org/)).
 
-3. Funding for a codecheck editor.
+3. Funding for a **codecheck editor**.
 
 4. Come and [**get involved**](https://codecheck.org.uk/get-involved/)
 
@@ -245,112 +293,246 @@ TODO screenshots example certificate
 For more information please see: <http://codecheck.org.uk> and [#CODECHECK](https://twitter.com/hashtag/CODECHECK?src=hashtag_click)
 
 ---
+class: center, middle, agileout
+
+![](https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.svg)
+
+---
+class: agile
+
 # Reproducible AGILE
 
 <https://reproducible-agile.github.io/>
 
+--
+
 2017, ‘18 & ‘19: Workshops on reproducibility
+
 2019: Reproducible publications at AGILE conferences (initiative)
+
 2020: AGILE Reproducible Paper Guidelines v1
+
 2020: First AGILE reproducibility review; guidelines v2
+
 2021: Guidelines mandatory; repro reviews linked from papers: <https://agile-giss.copernicus.org/articles/2/index.html>
 
 ---
+class: agile
+
 # AGILE Reproducible Paper Guidelines
 
-https://doi.org/10.17605/OSF.IO/CB7Z8 
+.pull-left[
+**<https://doi.org/10.17605/OSF.IO/CB7Z8>**
 
-Promotion, not exclusion
-Data and software availability section
-Author & reviewer guidelines
-Reproducibility checklist
+- Promotion, not exclusion
+- Data and software availability section
+- Author & reviewer guidelines
+- Reproducibility checklist
 
 **14 successful reproductions in 2020 & '21**
+]
+
+.pull-right[
+
+[![:scale 70%](https://reproducible-agile.github.io/public/images/agile-reproducible-paper-guidelines-v2-title-page.png)](https://doi.org/10.17605/OSF.IO/CB7Z8)
+
+]
 
 ---
+class: agile
+
 # Review process
 
+.pull-left[
 Reproducibility review after accept/reject decisions
+
 Reproducibility review & communication
+
 Community conference & volunteers
+
 Badges on proceedings website, article website with link, and first article page
 (💖 Copernicus!)
+]
 
+.pull-right[
+    ![:scale 130%](agile-proceedings-01.jpg)
+]
 
-TODO screenshot proceedings
+--
+
+<image style="border: 1px solid #004D9C; position:absolute; top: 5%; right: 5%; width: 45%;" src="agile-proceedings-02.jpg" >
+
+--
+
+<image style="border: 1px solid #004D9C; position:absolute; bottom: 10%; right: 5%; width: 45%;" src="agile-proceedings-03.jpg" >
 
 ---
-# How to put your community on a path towards more reproducibility in 5 ~~easy~~ hard steps
+class: agile, center
 
-1. Build a team of enthusiasts (workshop, social events)
-1. Assess the current state and raise awareness (workshop, paper)
-1. Institutional support (🙏 AGILE Council 🙏 + committee chairs)
-1. Positive encouragement (no reproduction != bad science)
-1. Keep at it!
+# 🙌
 
-
----
-# Next
+**How to put your community on a path towards more reproducibility in 5 ~~easy~~ hard steps**
 
 --
 
-2022
+1️⃣ Build a team of enthusiasts (workshop, social events) **💪🧠**
 
 --
 
-Grow reproducibility reviewer team
+2️⃣ Assess the current state and raise awareness (workshop, paper) **🔬**
 
 --
 
-Continue discourse (meaning of rprdcblty)
-Re-assess new papers > impact?
-Towards opening scholarship
-Scope, requirements, acceptance condition?
-Open review if tenured? Format-free first submission
-CRediT
+3️⃣ Institutional support (🙏 AGILE Council 🙏 + committee chairs)
 
 --
 
-Phase out when standard practice...
+4️⃣ Positive encouragement (no reproduction != bad science) **✨**
 
+--
+
+5️⃣ Keep at it! **🤗**
+
+--
+
+---------
+
+**(Next) steps**
+
+.pull-left[
+
+Reproducibility reviews **2022+**
+
+Grow reproducibility reviewer **team**
+
+Continue community **discourse**
+]
+
+.pull-right[
+**Re-assess** new papers > impact?
+
+**Towards open scholarship**:
+Open review if tenured? Format-free first submission? CRediT?
+]
+
+--
+
+_Phase out when standard practice..._
 
 ---
 # What is RSE(ng) about this?
 
+.pull-left[
+  # 🖥️
 
+  # 🤹 ⛏️
+
+  # T ➡️ π
+]
+
+--
+
+.pull-left[
+  # 🤓
+
+  # 👶
+
+  # 🧰
+]
+
+--
+<div style="clear: both;"></div>
+
+# 📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦
+
+
+???
+
+The skillset of an RSE is great for just trying to run somebody else's workflow, and the task can be a fun "riddle" to solve.
+
+The feedback that an RSE with development experience can give is helpful, and rare help for many researchers.
+RSEs can give a great contribution to scholarly communication.
+
+PI-shaped scientists, traditional vs. modern: need deep topical and deep technical skills
+
+--------
+
+The kind community that we as RSEs live in is also a great mindset for a positive attitude in reproduction, in the interaction with an author.
+
+The whole exercise in general is excellent for early career researchers, and an entry point to participate in peer review, add a missing set of skills to peer review.
+
+And you always learn something!
+
+--------
+
+And you learn to use _all_ of the package managers that exist.
 
 ---
+# Code review != reproducibility review
 
-TODO: cultural change turtle
+--
 
+.pull-left[
+
+[![:scale 60%](https://github.com/ropensci/logos/raw/master/icon_lettering_color.png)](https://ropensci.org/)
+
+[![:scale 70%](https://aws1.discourse-cdn.com/free1/uploads/pyopensci/original/1X/4f88cff7db557a0d9ad7e2c8b109ee23628bbb14.png)](https://www.pyopensci.org/)
+
+[![:scale 70%](https://joss.theoj.org/logo_large.jpg)](https://joss.theoj.org/)
+
+]
+
+--
+
+.pull-right[
+
+### [Code Review Community](https://docs.google.com/document/d/1jUGAvvviXmlP7EywkWEB9prlRuYBOmmIGrjo3Tqc1Bw/edit#) working group
+
+[**Code Review During Development** session](https://software.ac.uk/cw22/mini-workshops-and-demo-sessions#1.1) tomorrow!
+
+![](https://c.tenor.com/8sZKZdt_pQUAAAAC/ready-to-help.gif)
+![:credit](https://tenor.com/view/ready-to-help-gif-18701931)
+
+]
+
+
+???
+
+Why was the talk announced as code review and you did not talk about reviewing code but explicitly about two processes that did not care about code quality?
+
+Well, I hope by now you don't think it was merely a trick to get all of you interested!
+
+Instead, I would like to think of what I showed today as a precursor, hopefully, of more actual code review as part of scholarly communication and discourse.
+
+https://researchcodereviewcommunity.github.io/dev-review/
+
+---
+class: center
+background-image: url(https://i.giphy.com/media/Ze3RpHue7qkwvcYOOf/giphy.webp)
+
+--
+
+# <br/><br/>
+# Cultural Change
+
+# <br/><br/><br/><br/><br/>
+
+![:credit](https://giphy.com/gifs/bbcamerica-cute-animals-lifestory-Ze3RpHue7qkwvcYOOf)
 
 ???
 
 Computational reproducibility is still perceived as hard, much too rarely taught or checked, and if achieved it does not get enough credit.
 Irreproducibility is not a technological problem, but a social and systemic one.
-CODECHECK and Reproducible AGILE try to tackle a small part of all the bigger problems and be kind in the process.
+CODECHECK and Reproducible AGILE try to tackle a small part of all the bigger problems that science has, and be kind in the process.
 Cultural change takes time.
 
 **With the few seconds left, I want to answer two more questions:**
 
----
-# Code review != reproducibility review
-
-TODO https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111265777e2_10_262
-
-ROpenSci
-
-pyOpenSci
-
-JORS
-
-JOSS
-
-Code Review Community Working Group
-
-???
+[Many problems: Publish or perish, Broken metrics (citations, JIF), Structural change not considering ,   senior academics, Publication bias, Long-term funding for tools & infrastructure, HARKing, p-Hacking, Scholarly communication 1.0, Lack of reusability, Lack of transparency, Lack of reproducibility, Reinventing the wheel, Retraction practices, Not invented here syndrome, Fraud, Imposter syndrome, No “negative” citation, ...]
 
 ---
+class: middle
+
 **One thing** on more reproducible research publications:
 
 --
@@ -359,18 +541,43 @@ Code Review Community Working Group
 
 (Inspired by Greg Wilson’s Teching Tech Together (http://teachtogether.tech/en/index.html) Rule 1.)
 
+--
+
+<br /><br /><br /><br /><br /><br />
+
+--------
+
+**Thank you! Questions?**
+
+HTML slides: <https://bit.ly/cw22-keynote-daniel> | PDF slides: <https://doi.org/10.6084/m9.figshare.19487573>
+
 ???
 
-If your remember ONE thing from this talk.
+If your remember ONE thing from this talk, it should be this:
+
+I'm going to leave that up there: Thank you for your attention - I look forward to your questions.
 
 ---
-class: blackout
+class: blackout, center, middle
 
 # Encore
 
+---
+## "It ain't pretty, but it works" (H. Bastian)
+
+.pull-left[
+(The most prominent check until today!)
+]
+
+.pull-right[
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
 
 ---
-# Defintion
+background-image: url(https://pbs.twimg.com/media/FPNMQXqXwAIB-Ab?format=jpg&name=medium)
+
+---
+# Definition
 
 ![How the Turing Way defines reproducible research¶](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
 
@@ -388,17 +595,24 @@ TODO more
 ---
 # Deep dive
 
-TODO: KE report
+![](https://knowledge-exchange.info/images/scaled/212x52/img/f/knowledge-exchange-logo.png)
 
-https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111cd074ad3_0_215
+.pull-left[
+Chiarelli, Andrea, Loffreda, Lucia, & Johnson, Rob. (2021). **The Art of Publishing Reproducible Research Outputs: Supporting emerging practices through cultural and technological innovation**. Zenodo.
+<https://doi.org/10.5281/zenodo.5521077>
 
-and 
+Chiarelli, Andrea, Loffreda, Lucia, & Johnson, Rob. (2021). **Executive Summary**: The Art of Publishing Reproducible Research Outputs: Supporting emerging practices through cultural and technological innovation. Zenodo.
+<https://doi.org/10.5281/zenodo.5639384>
+]
 
-https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g111cd074ad3_0_229
+.pull-right[
+**<https://knowledge-exchange.info/event/publishing-reproducible-research-output>**
+
+![](https://knowledge-exchange.info/images/525/scaledcropped/160x230/resources/525/cover-executive-summary-art-of-publishing-reproducible-research-output-nov-2021.jpg)
+]
 
 ---
 # Reproducible AGILE and CODECHECK: Highlights of Lessons learned
-
 
 Spectrum or layers of reproducibility very apparent
 
@@ -417,7 +631,7 @@ Communication is without alternative
 Safety net (👀), not security
 
 ---
-# What can communities and institutions do?
+# What can communities & institutions do?
 
 Introduce reproducibility reviews - CODECHECK (or not) - at your journals, labs, collaborations!
 
@@ -431,14 +645,14 @@ Community discourse
 
 Awareness > Change
 
+**Throw technology at it**
 
----
-# Throw technology at it
+???
 
 https://docs.google.com/presentation/d/1mAZnnsICeRLsB-7a2L8fPHvxwAIIQ6ZsY-mWY7gOPOE/edit#slide=id.g10fe80a6eec_0_163
 
 ---
-**Limitations**
+class: center, middle, inverse
 
 # _Digital information lasts forever, or five years - whichever comes first._
 
@@ -446,47 +660,96 @@ Rothenberg, Jeff. 1995. “Ensuring the Longevity of Digital Documents.” Scien
 via https://twitter.com/snet_jklump/status/1141934045820887040?s=09
 
 ---
-# Preproducibility
+# "Preproducibility" - Philip Stark
 
-TODO
+.pull-left[
+**_"Science should be 'show me', not 'trust me'; it should be 'help me if you can', not 'catch me if you can'."_**
+<!-- If I publish an advertisement for my work (that is, a paper long on results but short on methods) and it’s wrong, that makes me untrustworthy. 
+If I say: “here’s my work” and it’s wrong, I might have erred, but at least I am honest. --> 
+
+[...]
+
+**"_If you and I get different results, preproducibility can help us to identify why — and the answer might be fascinating._"**
+]
+
+.pull-right[
+
+Nature 557, 613 (2018). https://doi.org/10.1038/d41586-018-05256-0
+
+]
 
 ---
 # Reproducibility spectrum
 
-TODO
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/bin/nihms382015f1.jpg)
+
+Peng R. D. (2011). Reproducible research in computational science. Science (New York, N.Y.), 334(6060), 1226–1227. <https://doi.org/10.1126/science.1213847>
 
 ---
-# PI-shaped scientists
+# Five selfish reasons to work reproducibly
 
-Traditional vs. modern
+1. **reproducibility helps to avoid disaster**
 
-TODO
+1. **reproducibility makes it easier to write papers**
+
+1. **reproducibility helps reviewers see it your way**
+
+1. **reproducibility enables continuity of your work**
+
+1. **reproducibility helps to build your reputation**
+
+Markowetz, F. Five selfish reasons to work reproducibly. Genome Biol 16, 274 (2015). <https://doi.org/10.1186/s13059-015-0850-7>
 
 ---
 # Reproducibility is "more work"
 
-TODO figure
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In my experience, you don&#39;t lose time doing reproducible science—you just *relocate* how you&#39;re spending it <a href="https://t.co/RD2FZu5Bnw">pic.twitter.com/RD2FZu5Bnw</a></p>&mdash; Dan Quintana (@dsquintana) <a href="https://twitter.com/dsquintana/status/1331979334245097477?ref_src=twsrc%5Etfw">November 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Quintana, D. S. (2020, November 28). Five things about open and reproducible science that every early career researcher should know. https://doi.org/10.17605/OSF.IO/DZTVQ
 
-<https://twitter.com/dsquintana/status/1331979334245097477>
-
 ---
+
+.pull-left[
 # GIScience assessment
 
-TODO integrated mega figure
+Nüst, Daniel. 2021. Infrastructures and Practices for Reproducible Research in
+Geography, Geosciences, and GIScience. Doctoral dissertation, University of
+Münster, Germany. <https://doi.org/10.5281/zenodo.4768096>
+]
+
+.pull-right[
+[![](https://pbs.twimg.com/media/FPNMWWoXsA4mO0-?format=jpg&name=large)](https://twitter.com/nordholmen/status/1509634329328164877/photo/4)
+]
 
 ???
 
 Everybody should do this for their discipline
-
----
-
-TODO screenshots guidelines
 
 
 ```{r copy_slides_to_docs, include=FALSE}
 file.copy(from = "cw22-keynote-daniel-nuest.html",
           to = file.path("../docs"),
           overwrite = TRUE)
+file.copy(from = "macros.js",
+          to = file.path("../docs"),
+          overwrite = TRUE)
+file.copy(from = "codecheck.css",
+          to = file.path("../docs"),
+          overwrite = TRUE)
+file.copy(from = list.files(getwd(), "*.jpg", full.names = TRUE),
+          to = file.path("../docs"),
+          overwrite = TRUE)
+```
+
+```{r create_pdf, eval=FALSE, include=FALSE}
+current_dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(current_dir)
+current_file <- basename(rstudioapi::getSourceEditorContext()$path)
+system(paste0("cat ", current_file, " | grep -v '^--$' > print.Rmd"))
+rmarkdown::render("print.Rmd", "xaringan::moon_reader")
+xaringan::decktape(file = "print.html", output = "slides.pdf", docker = TRUE)
+file.copy(from = "slides.pdf",
+          to = file.path("..", "docs", paste0(tools::file_path_sans_ext(current_file), ".pdf")),
+          overwrite = TRUE)
+file.remove("slides.pdf", "print.html", "print.Rmd")
 ```

@@ -10,8 +10,7 @@
 - `2021-05_Southampton`: slides for ReproducibilityTea at Southamtpon.  [HTML slides](https://bit.ly/codecheck21)
 - `2022-04_CW22`: slides for keynote at Collaborations Workshop '22. [HTML slides](https://bit.ly/cw22-keynote-daniel) (redirects to <https://codecheckers.github.io/slides/cw22-keynote-daniel-nuest.html>)
 
-
-Slides are archived regularly on Zenodo:
+These slides are archived regularly on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3855439.svg)](https://doi.org/10.5281/zenodo.3855439)
 

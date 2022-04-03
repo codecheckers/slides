@@ -7,7 +7,7 @@ ul li {
   font-size: 1.2em;
 }
 
-ul li > ul li {
+ul li>ul li {
   font-size: 1em;
 }
 
@@ -24,22 +24,31 @@ summary {
   color: #6c757d;
 }
 
+.credit {
+  font-size: 50%;
+  color: #6c757d;
+}
+
 /* overwriting https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
-a, a > code {
+a, a>code {
   color: #008033;
   text-decoration: none;
 }
 
-.remark-code-line-highlighted     { background-color: #ffff88; }
+.remark-code-line-highlighted {
+  background-color: #ffff88;
+}
 
 .inverse {
   background-color: #008033;
   color: #ffffff;
   text-shadow: 0 0 2px #999;
 }
+
 .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6 {
   color: #ffffff;
 }
+
 .inverse a {
   color: #AAAAAF;
   text-decoration: none;
@@ -54,6 +63,7 @@ a, a > code {
 .title-slide h2 {
   font-size: 1.4em;
 }
+
 .title-slide h3 {
   font-size: 1.2em;
 }
@@ -61,4 +71,17 @@ a, a > code {
 .blackout {
   background-color: #000000;
   color: #000000;
+}
+
+.agileout {
+  background-color: #004D9C;
+}
+
+.agile h1, .agile h2, .agile h3, .agile h4, .agile h5, .agile h6 {
+  color: #004D9C;
+}
+
+.agile a, .agile a>code {
+  color: #004D9C;
+  text-decoration: none;
 }
