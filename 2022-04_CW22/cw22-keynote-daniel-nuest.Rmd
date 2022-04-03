@@ -730,6 +730,9 @@ Everybody should do this for their discipline
 file.copy(from = "cw22-keynote-daniel-nuest.html",
           to = file.path("../docs"),
           overwrite = TRUE)
+file.copy(from = "libs",
+          to = file.path("../docs"),
+          overwrite = TRUE, recursive = TRUE)
 file.copy(from = "macros.js",
           to = file.path("../docs"),
           overwrite = TRUE)
