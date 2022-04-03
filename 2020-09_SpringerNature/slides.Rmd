@@ -433,7 +433,7 @@ https://codecheck.org.uk/guide/community-process
 
 Rule 1 inspired by Greg Wilson's Teach Together.
 
-**working openly and reproducibliy can be scary**
+**working openly and reproducibly can be scary**
 
 ------
 
