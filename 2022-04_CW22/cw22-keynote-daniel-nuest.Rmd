@@ -208,37 +208,6 @@ Figure 3 of <https://doi.org/10.12688/f1000research.51738.2>
 ### 5. Open by default and transitional by disposition.
 
 ---
-
-.pull-left[
-## Who does the work?
-
-1. **AUTHOR** provides code/data and instructions on how to run.
-
-2. **CODECHECKER** runs code and writes certificate.
-
-3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
-]
-
---
-
-.pull-right[
-## Who benefits?
-
-1. **AUTHOR** gets early check that &quot;code works&quot;; gets snapshot of
-   code archived and increased trust in stability of results.
-
-2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
-
-3. **PUBLISHER** Gets citable certificate with code/data bundle to
-   share and increases reputation of published articles.
-
-4. **PEER REVIEWERS** can see certificate rather than check code
-   themselves.
-
-5. **READER** Can check certificate and build upon work immediately.
-]
-
----
 class: inverse
 
 <https://codecheck.org.uk/register/>
@@ -539,7 +508,7 @@ class: middle
 
 # Have a README: all else is details.
 
-(Inspired by Greg Wilson’s Teching Tech Together (http://teachtogether.tech/en/index.html) Rule 1.)
+![:credit](Inspired by Greg Wilson’s Teching Tech Together Rule 1 - http://teachtogether.tech/en/index.html)
 
 --
 
@@ -573,6 +542,38 @@ class: blackout, center, middle
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ]
 
+
+---
+
+.pull-left[
+## Who does the work?
+
+1. **AUTHOR** provides code/data and instructions on how to run.
+
+2. **CODECHECKER** runs code and writes certificate.
+
+3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
+]
+
+--
+
+.pull-right[
+## Who benefits?
+
+1. **AUTHOR** gets early check that &quot;code works&quot;; gets snapshot of
+   code archived and increased trust in stability of results.
+
+2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
+
+3. **PUBLISHER** Gets citable certificate with code/data bundle to
+   share and increases reputation of published articles.
+
+4. **PEER REVIEWERS** can see certificate rather than check code
+   themselves.
+
+5. **READER** Can check certificate and build upon work immediately.
+]
+
 ---
 background-image: url(https://pbs.twimg.com/media/FPNMQXqXwAIB-Ab?format=jpg&name=medium)
 
@@ -589,8 +590,6 @@ CC-BY 4.0 | © The Turing Way Community | https://the-turing-way.netlify.app/rep
 **<https://osf.io/x32nc>**
 
 Daniel Nüst, Heidi Seibold, Stephen Eglen, Lea Schulz-Vanheyden, Limor Peer, Josef Spillner
-
-TODO more 
 
 ---
 # Deep dive
