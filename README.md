@@ -8,6 +8,7 @@
   meeting. [HTML slides](https://bit.ly/eglen-orwg2) and [you tube video](https://www.youtube.com/watch?v=sAzvz-ZZYuU).
 - `2020-09_SpringerNature`: slides for meeting with editors. [HTML slides](https://codecheck.org.uk/slides/2020-09_SpringerNature.html), [PDF](https://codecheck.org.uk/slides/2020-09_SpringerNature.pdf)
 - `2021-05_Southampton`: slides for ReproducibilityTea at Southamtpon.  [HTML slides](https://bit.ly/codecheck21)
+- `2022-02-23_Toronto`: slides for [Toronto workshop on reproducibility](https://canssiontario.utoronto.ca/2022-toronto-workshop-on-reproducibility-schedule/).  [HTML slides](https://tiny.one/codecheck22).
 - `2022-04_CW22`: slides for keynote at Collaborations Workshop '22. [HTML slides](https://bit.ly/cw22-keynote-daniel) (redirects to <https://codecheckers.github.io/slides/cw22-keynote-daniel-nuest.html>)
 
 These slides are archived regularly on Zenodo:
