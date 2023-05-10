@@ -11,6 +11,7 @@
 - `2022-02-23_Toronto`: slides for [Toronto workshop on reproducibility](https://canssiontario.utoronto.ca/2022-toronto-workshop-on-reproducibility-schedule/).  [HTML slides](https://tiny.one/codecheck22).
 - `2022-04_CW22`: slides for keynote at Collaborations Workshop '22. [HTML slides](https://bit.ly/cw22-keynote-daniel) (redirects to <https://codecheckers.github.io/slides/cw22-keynote-daniel-nuest.html>)
 - `2022-11_GRN-Video`: slides for introduction video for the German Reproducibility Network (GRN) members list at <https://reproducibilitynetwork.de/members/>. [HTML slides](https://codecheckers.github.io/slides/codecheck-video.html)
+- `2023-05_HiRSE-Talk`: slides for talk in the event series of the Helmholtz Platform for Research Software Engineering (HiRSE) [slides](https://bit.ly/hirse-codecheck)
 
 These slides are archived regularly on Zenodo:
 
