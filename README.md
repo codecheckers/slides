@@ -15,6 +15,7 @@
 - `2023-05_HiRSE-Talk`: slides for talk in the event series of the Helmholtz Platform for Research Software Engineering (HiRSE). [Slides](https://bit.ly/hirse-codecheck)
 - `2023-09_TU-Delft-Workshop`: Introduction slides for the TU Delft & CODECHECK Hakathon. [Slides](https://bit.ly/check-delft)
 - `2023-10_Cambridge-RSE-Seminars`: Talk on CODECHECK and Reproducible AGILE at the [RSE Seminars](https://talks.cam.ac.uk/show/index/69831) series at University of Cambridge. [Slides](https://bit.ly/check-cam)
+- `2024-05_CHECK-NL`: Talk by Stephen at the [first CODECHECK-NL Workshop](https://codecheck.org.uk/nl-workshop1/), originally available [here](https://sje30.github.io/talks/2024/codecheck2024-02.html#/title-slide).
 
 These slides are archived regularly on Zenodo:
 
