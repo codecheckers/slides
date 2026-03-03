@@ -1,0 +1,212 @@
+---
+title: CODECHECK
+background-color: red
+subtitle: Independent execution of computations underlying research articles
+format:
+  clean-revealjs:
+    self-contained: true
+author:
+  - name: Stephen J Eglen
+    orcid: 0000-0001-8607-8025
+    email: sje30@cam.ac.uk
+    affiliations: University of Cambridge
+  - name: Daniel Nüst
+    orcid: 0000-0002-0024-5046
+    affiliations: TU Dresden
+date: 2024-04-24
+bibliography: refs.bib
+---
+
+
+
+## {sje-background-color="GhostWhite"}
+
+### Declarations
+
+Affiliate editor of *bioRxiv*; editorial board of *Gigabyte*.
+
+
+### Acknowledgements
+
+Mozilla mini science grant, UK Software Sustainability Institute, NWO.
+Editors @ *Gigascience*, *eLife*, *Scientific Data*.
+
+Thank you BNA for awarding us the Team Credibility Prize 2024.
+
+
+### Slides
+
+Slides (CC BY 4.0) are available in HTML format from
+<https://tinyurl.com/codecheck2024-02>.
+[(Grant
+McDermott)](https://github.com/grantmcdermott/quarto-revealjs-clean).
+
+## CODECHECK in one slide
+
+
+::: {.incremental}
+
+1. We take your paper, code and datasets.
+
+
+2. We run your code on your data.
+
+3. If our results match your results, go to step 5.
+
+4. Else we talk to you to find out where code broke.  If you fix your
+   code or data, we return to step 2 and try again.
+
+5. We write a report summarising that we could reproduce your finding.
+
+6. We work with you to freely share your paper, code, data and our
+   reproduction.
+
+:::
+
+## Premise
+
+
+<br>
+
+![](figs/rr.svg)
+
+
+We should be sharing material on the left, not the right.
+
+"Paper as advert for Scholarship" [(Buckheit & Donoho, 1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5)
+
+
+
+
+## The CODECHECK philosophy / 1
+
+::: {.r-stack}
+![](figs/codecheck-two-dimensions-1.svg){fig-align="center"}
+
+![](figs/codecheck-two-dimensions-2.svg){.fragment fig-align="center"}
+:::
+
+
+## The CODECHECK philosophy / 2
+
+<!-- - Systems like Code Ocean set the bar high by "making code -->
+<!--   reproducible *forever* for *everyone*". -->
+
+<!-- - CODECHECK  simply asks "was the code reproducible *once* for -->
+<!--   *someone* else?" -->
+
+- We check the code generates expected number of output files.
+
+- The contents of those output files are not checked, but are
+  available for others to see.
+  
+- The validity of the code is *not* checked.
+
+
+## Where is the neuroscience?
+
+- This is not neuro-specific; we work across disciplines.
+
+- Depending on your project, there may be data to analyse, or
+  simulations to run.
+  
+- We did several reproductions of Covid papers, including the Imperial
+  "Report 9" model.
+
+## Case study: regulation of pupil size in natural vision across the human lifespan (Lazar et al 2024)
+ 
+ 
+ <!-- pdf renders in chrome, not in safari -->
+```{=html}
+<embed src="figs/codecheck.pdf" width="1000px" height="500px" />
+```
+
+
+## Who does the work?
+
+1. **AUTHOR** provides code/data and instructions on how to run.
+
+2. **CODECHECKER** runs code and writes certificate.
+
+3. **PUBLISHER** oversees process, helps depositing artifacts, and persistently publishes certificate.
+   
+
+
+## Who benefits?
+
+1. **AUTHOR** gets early check that "code works"; gets snapshot of
+   code archived and increased trust in stability of results.
+
+2. **CODECHECKER** gets insight in latest research and methods, credit from community, and citable object.
+
+3. **PUBLISHER** Gets citable certificate with code/data bundle to
+   share and increases reputation of published articles.
+
+4. **PEER REVIEWERS** can see certificate rather than check code
+   themselves.
+
+5. **READER** Can check certificate and build upon work immediately.
+
+
+
+
+## Our register of certificates
+
+<https://codecheck.org.uk/register/>
+<br>
+
+
+See for example certificate 2020-010 (Imperial's "Report 9").
+
+<!-- <https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(20)30133-X/fulltext> -->
+
+
+::: {#fig-elephant}
+
+<iframe width="1000" height="500" src="https://codecheck.org.uk/register"></iframe>
+
+:::
+
+
+ <!-- `r im1("figs/codecheckregister-sep2020.png", width=700)` -->
+
+
+<!-- Example certificate: <https://zenodo.org/record/3865491/files/codecheck.pdf> -->
+
+<!-- <\!-- --- -\-> -->
+<!-- <\!-- ## "It ain't pretty, but it works" (H. Bastian) -\-> -->
+
+<!-- <\!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Independent review <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a> confirmed that <a href="https://twitter.com/MRC_Outbreak?ref_src=twsrc%5Etfw">@MRC_Outbreak</a> team&#39;s <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> simulation is reproducible: thumbs up from code-checking efforts <a href="https://twitter.com/nature?ref_src=twsrc%5Etfw">@nature</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/covid19science?src=hash&amp;ref_src=twsrc%5Etfw">#covid19science</a><a href="https://t.co/vpa7CkPZjV">https://t.co/vpa7CkPZjV</a></p>&mdash; Sabine L.van Elsland (@SabineLvE) <a href="https://twitter.com/SabineLvE/status/1270789727059349505?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -\-> -->
+
+
+
+## Limitations
+
+1. CODECHECKER time is valuable, so needs credit.
+
+2. Very easy to cheat the system, but who cares?
+
+3. Author's code/data must be freely available.
+
+4. Deliberately low threshold for gaining a certificate.
+
+5. High-performance compute is a resource drain.
+
+6. Cannot (yet) support all thinkable/existing workflows and languages.
+
+## Next steps
+
+1. New project <https://codecheck.org.uk/nl> aiming to produce 50 codechecks
+   for papers from Netherlands.
+   
+1. Embedding into journal workflows.
+
+2. Training a community of codecheckers.
+
+3. Funding for a codecheck editor.
+
+4. Come and [get involved](https://codecheck.org.uk/get-involved/)
+
+
+Further information: <http://codecheck.org.uk> and our
+[research article](https://f1000research.com/articles/10-253/).
