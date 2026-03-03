@@ -18,6 +18,7 @@
 - `2024-02_Rotterdam-Workshop`: Short talk on the project, .qmd and rendered HTML
 - `2024-05_CHECK-NL`: Talk by Stephen at the [first CODECHECK-NL Workshop](https://codecheck.org.uk/nl-workshop1/), originally available [from Stephen's website](https://sje30.github.io/talks/2024/codecheck2024-02.html#/title-slide).
 - `2025-09_OJSRed` Talk by Daniel at the [OJSRed](https://ojsred.net/) community call on OJS Plugins, including the [ojs-codecheck plugin](https://github.com/codecheckers/ojs-codecheck/) from the project [CHECK-PUB](https://codecheck.org.uk/pub/) (mixed German 🇩🇪/English 🏴󠁧󠁢󠁥󠁮󠁧󠁿!)
+- `2026-03_Love-Replications-Week`: Presentation on the project and ways to get a certificate by Daniel for the [Love Replications Week 2026](); citable version published at <https://doi.org/10.5281/zenodo.18849086>
 
 These slides are archived regularly on Zenodo:
 
