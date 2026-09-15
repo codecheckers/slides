@@ -13,12 +13,15 @@
 - `2022-11_GRN-Video`: slides for introduction video for the German Reproducibility Network (GRN) members list at <https://reproducibilitynetwork.de/members/>. [HTML slides](https://codecheckers.github.io/slides/codecheck-video.html)
 - `2023-04_Rbanism`: keynote at [Rbanism](https://www.esciencecenter.nl/claudiu-forgaci/) [Repro Challenge](https://github.com/Rbanism/repro-challenge) wrap-up event. [Slides](https://bit.ly/rbanism-talk)
 - `2023-05_HiRSE-Talk`: slides for talk in the event series of the Helmholtz Platform for Research Software Engineering (HiRSE). [Slides](https://bit.ly/hirse-codecheck)
+- `2023-05_EGU`: Presentation at EGU General Assembly 2023 on "A peer review process for higher reproducibility of publications in GIScience can also work for Earth System Sciences, [slides online](https://bit.ly/peer-review-process-ess), [abstract](https://doi.org/10.5194/egusphere-egu23-15384)
 - `2023-09_TU-Delft-Workshop`: Introduction slides for the TU Delft & CODECHECK Hakathon. [Slides](https://bit.ly/check-delft)
 - `2023-10_Cambridge-RSE-Seminars`: Talk on CODECHECK and Reproducible AGILE at the [RSE Seminars](https://talks.cam.ac.uk/show/index/69831) series at University of Cambridge. [Slides](https://bit.ly/check-cam)
 - `2024-02_Rotterdam-Workshop`: Short talk on the project, .qmd and rendered HTML
 - `2024-05_CHECK-NL`: Talk by Stephen at the [first CODECHECK-NL Workshop](https://codecheck.org.uk/nl-workshop1/), originally available [from Stephen's website](https://sje30.github.io/talks/2024/codecheck2024-02.html#/title-slide).
 - `2025-09_OJSRed` Talk by Daniel at the [OJSRed](https://ojsred.net/) community call on OJS Plugins, including the [ojs-codecheck plugin](https://github.com/codecheckers/ojs-codecheck/) from the project [CHECK-PUB](https://codecheck.org.uk/pub/) (mixed German 🇩🇪/English 🏴󠁧󠁢󠁥󠁮󠁧󠁿!)
-- `2026-03_Love-Replications-Week`: Presentation on the project and ways to get a certificate by Daniel for the [Love Replications Week 2026](); citable version published at <https://doi.org/10.5281/zenodo.18849086>
+- `2026-03_Love-Replications-Week`: Presentation on the project and ways to get a certificate by Daniel for the [Love Replications Week 2026](https://forrt.org/love-replications-week/); citable version published at <https://doi.org/10.5281/zenodo.18849086>
+- `2026-05_NFDI-BB`: [NFDI Berlin-Brandenburg meeting May 2026](https://doi.org/10.25798/gmzb-cd87) on "Code execution in peer review for your favourite conference or journal with CODECHECK" published on Zenodo at <http://doi.org/10.5281/zenodo.20084769>
+- `2026-06_RSD-BB`: Presentation together with [DHtech Code Review WG](https://dhcodereview.github.io/) at the [First Research Software Day Berlin & Brandenburg](https://forschungssoftware.info/RSdays/2026/Berlin/) on "How to create better code for better research", published on Zenodo at <https://doi.org/10.5281/zenodo.20733522>
 
 These slides are archived regularly on Zenodo:
 
