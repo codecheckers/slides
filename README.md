@@ -22,6 +22,7 @@
 - `2026-03_Love-Replications-Week`: Presentation on the project and ways to get a certificate by Daniel for the [Love Replications Week 2026](https://forrt.org/love-replications-week/); citable version published at <https://doi.org/10.5281/zenodo.18849086>
 - `2026-05_NFDI-BB`: [NFDI Berlin-Brandenburg meeting May 2026](https://doi.org/10.25798/gmzb-cd87) on "Code execution in peer review for your favourite conference or journal with CODECHECK" published on Zenodo at <http://doi.org/10.5281/zenodo.20084769>
 - `2026-06_RSD-BB`: Presentation together with [DHtech Code Review WG](https://dhcodereview.github.io/) at the [First Research Software Day Berlin & Brandenburg](https://forschungssoftware.info/RSdays/2026/Berlin/) on "How to create better code for better research", published on Zenodo at <https://doi.org/10.5281/zenodo.20733522>
+- `2026-10_IPIN`: Presentation by Daniel at IPIN 2026 on "Computational Reproducibility Review for Community Conferences with CODECHECK" (2026-10-07). [Slides](https://t1p.de/ipin-check), [PDF](2026-10_IPIN/Computational%20Reproducibility%20Review%20for%20Community%20Conferences%20with%20CODECHECK%20_%20Daniel%20N%C3%BCst%20%40%20IPIN%202026%20_%202026-10-07.pdf)
 
 These slides are archived regularly on Zenodo:
 
